@@ -389,6 +389,19 @@
                     "thirdattack": "moveC"
                 }
             ]
+        },
+        {
+            "id": 31,
+            "name": "Yu me? No yu",
+            "tier": 1,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
         }
     ]
 }
