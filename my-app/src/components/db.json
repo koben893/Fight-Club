@@ -1,0 +1,454 @@
+{
+    "fighters": [
+        {
+            "id": 1,
+            "name": "Adam Meow",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Emiley Potato",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Alexis Bougie",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Amelia Earheart",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Erica Belter",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Francesco Weeee",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Jeffery Arbitrary",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Jessica Ronaldo",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Jonathan Grabeverything",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Kevin Prozack",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Marc Kittycat",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Megan Harry",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Paul Marchalot",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Priyam Yaaas",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Sadaf Sadwick",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Sean Steamyns",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Sebastian Shortinez",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Shanley Caspoor",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Suan Soon(Ron)",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "name": "Syed Hamalot must be pair",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Syeda Hamalittle must be a pair",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "name": "Tj Lister",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "name": "Nolan Pummel",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Andrew aka New Andrew, when dead becomes old andrew",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "name": "Adam 2.0 aka better Adam",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Ammar the captain, catchphrase when wins: I am the captain now",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "name": "Harjas Barjas",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "name": "Michael Fubar",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "name": "Robert Paisan",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "name": "Will Upincamp",
+            "atk": 100,
+            "def": 20,
+            "hp": 100,
+            "image": "",
+            "abilities":[
+                {
+                    "firstattack": "moveA",
+                    "secondattack": "moveB",
+                    "thirdattack": "moveC"
+                }
+            ]
+        }
+    ]
+}
