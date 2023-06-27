@@ -409,7 +409,21 @@
             "id": 1,
             "name": "Person 1",
             "teamName" : "Team 1",
-            "fighterList" : [],
+            "fighterList" : [
+                {
+                    "id": 31,
+                    "name": "Yu me? No yu",
+                    "tier": 1,
+                    "image": "",
+                    "abilities":[
+                        {
+                            "firstattack": "fetch: DELETE",
+                            "secondattack": "destructuring props",
+                            "thirdattack": "arrow function"
+                        }
+                    ]
+                }
+            ],
             "trophies" : []
         }
     ]
