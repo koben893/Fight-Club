@@ -30,7 +30,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/teamPage">
-          <BattleTeamPage userList={userList} cohort={cohort}/>
+          <BattleTeamPage cohort={cohort} userList={userList}/>
         </Route>
         <Route path="/arena">
           <BattleArenaPage />
@@ -39,7 +39,7 @@ function App() {
           <TrophiesPage />
         </Route>
         <Route exact path="/">
-          <Home userList={userList} cohert={cohort} activeUser={activeUser} setActiveUser={setActiveUser}/>
+          <Home userList={userList} cohort={cohort} activeUser={activeUser} setActiveUser={setActiveUser}/>
         </Route>
       </Switch>
     </div>

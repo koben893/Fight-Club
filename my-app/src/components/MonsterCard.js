@@ -1,23 +1,12 @@
 import React, {useState} from 'react'
 
-function MonsterCard({id, name, tier, image, abilities, handleSelect}) {
+function MonsterCard({id, name, image, tier, handleSelect}) {
   const [selected, setSelected] = useState(false)
 
   const handleClick = () => {
     setSelected(!selected)
     handleSelect(id)
   }
-
-  // const selectedCard =    
-  // <div>
-  //   <h3>{name}</h3>
-  //   <ul>
-  //     <h5>Abilities</h5>
-  //     <div>{moveset}</div>
-  //   </ul>
-  //   <h5>Tier: {tier}</h5>
-  // </div>
-
 
   return (
     <div onClick={handleClick}>

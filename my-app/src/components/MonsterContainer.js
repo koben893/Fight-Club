@@ -11,7 +11,7 @@ function MonsterContainer({cohort, teamName, fighterList, trophies}) {
 
   const moveset = displayedCoder.abilities.map(moves => { 
     return (
-      <ul>
+      <ul key={displayedCoder.id}>
         <p>{moves.firstattack}</p>
         <p>{moves.secondattack}</p>
         <p>{moves.thirdattack}</p>
@@ -24,9 +24,18 @@ function MonsterContainer({cohort, teamName, fighterList, trophies}) {
       key={coder.id}
       id={coder.id}
       name={coder.name}
-      tier={coder.tier}
       image={coder.image}
-      abilities={coder.abilities}
+      tier={coder.tier}
+      handleSelect={handleSelect}
+    />
+  )
+
+  const renderedTeams = fighterList.map(coder => 
+    <MonsterCard
+      key={coder.id}
+      id={coder.id}
+      name={coder.name}
+      image={coder.image}
       handleSelect={handleSelect}
     />
   )
@@ -36,7 +45,7 @@ function MonsterContainer({cohort, teamName, fighterList, trophies}) {
       <div>
         <h1>Team Info</h1>
           <h2>{teamName}</h2>
-          <ul>{fighterList}</ul>
+          {renderedTeams}
           <ul>{trophies}</ul>
       </div>
       <div>
