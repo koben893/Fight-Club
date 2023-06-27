@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 function App() {
   const [cohort, setCohort] = useState([])
   const [userList, setUserList] = useState([])
+  const [activeUser, setActiveUser] = useState({});
 
   useEffect(() => {
     fetch("http://localhost:3000/fighters")
@@ -29,7 +30,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/teamPage">
-          <BattleTeamPage />
+          <BattleTeamPage userList={userList} cohort={cohort}/>
         </Route>
         <Route path="/arena">
           <BattleArenaPage />
@@ -38,7 +39,7 @@ function App() {
           <TrophiesPage />
         </Route>
         <Route exact path="/">
-          <Home userList={userList} cohert={cohort}/>
+          <Home userList={userList} cohert={cohort} activeUser={activeUser} setActiveUser={setActiveUser}/>
         </Route>
       </Switch>
     </div>
