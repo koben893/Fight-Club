@@ -20,9 +20,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'useEffect Hook',
-                    "secondattack": 'destructuring props',
-                    "thirdattack": 'arrow function'
+                    "firstattack": "useEffect Hook",
+                    "secondattack": "destructuring props",
+                    "thirdattack": "arrow function"
                 }
             ]
         },
@@ -33,9 +33,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'destructuring props',
-                    "secondattack": 'useEffect Hook',
-                    "thirdattack": 'Redirect Component'
+                    "firstattack": "destructuring props",
+                    "secondattack": "useEffect Hook",
+                    "thirdattack": "Redirect Component"
                 }
             ]
         },
@@ -46,9 +46,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'destructuring props',
-                    "secondattack": 'useEffect Hook',
-                    "thirdattack": 'fetch: DELETE'
+                    "firstattack": "destructuring props",
+                    "secondattack": "useEffect Hook",
+                    "thirdattack": "fetch: DELETE"
                 }
             ]
         },
@@ -59,9 +59,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'destructuring props',
-                    "secondattack": 'Redirect Component',
-                    "thirdattack": 'useEffect Hook'
+                    "firstattack": "destructuring props",
+                    "secondattack": "Redirect Component",
+                    "thirdattack": "useEffect Hook"
                 }
             ]
         },
@@ -73,8 +73,8 @@
             "abilities":[
                 {
                     "firstattack": 'fetch: DELETE,
-                    "secondattack": 'destructuring props',
-                    "thirdattack": 'useEffect Hook'
+                    "secondattack": "destructuring props",
+                    "thirdattack": "useEffect Hook"
                 }
             ]
         },
@@ -85,9 +85,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'Redirect Component',
-                    "secondattack": 'arrow function',
-                    "thirdattack": 'destructuring props'
+                    "firstattack": "redirect component",
+                    "secondattack": "arrow function",
+                    "thirdattack": "destructuring props"
                 }
             ]
         },
@@ -98,9 +98,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'useEffect Hook',
-                    "secondattack": "'Redirect Component',
-                    "thirdattack": 'arrow function'
+                    "firstattack": "useEffect Hook",
+                    "secondattack": ""redirect component",
+                    "thirdattack": "arrow function"
                 }
             ]
         },
@@ -111,9 +111,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'fetch: DELETE',
-                    "secondattack": 'useEffect Hook',
-                    "thirdattack": 'arrow function'
+                    "firstattack": "fetch: DELETE",
+                    "secondattack": "useEffect Hook",
+                    "thirdattack": "arrow function"
                 }
             ]
         },
@@ -124,9 +124,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'useEffect Hook',
-                    "secondattack": 'destructuring props',
-                    "thirdattack": 'arrow function'
+                    "firstattack": "useEffect Hook",
+                    "secondattack": "destructuring props",
+                    "thirdattack": "arrow function"
                 }
             ]
         },
@@ -137,9 +137,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'useEffect Hook',
-                    "secondattack": 'fetch: DELETE',
-                    "thirdattack": 'arrow function'
+                    "firstattack": "useEffect Hook",
+                    "secondattack": "fetch: DELETE",
+                    "thirdattack": "arrow function"
                 }
             ]
         },
@@ -150,9 +150,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'arrow function',
-                    "secondattack": 'Redirect Component',
-                    "thirdattack": 'destructuring props'
+                    "firstattack": "arrow function",
+                    "secondattack": "redirect component",
+                    "thirdattack": "destructuring props"
                 }
             ]
         },
@@ -163,9 +163,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'fetch: DELETE',
-                    "secondattack": 'Redirect Component',
-                    "thirdattack": 'arrow function'
+                    "firstattack": "fetch: DELETE",
+                    "secondattack": "redirect component",
+                    "thirdattack": "arrow function"
                 }
             ]
         },
@@ -176,9 +176,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'destructuring props',
-                    "secondattack": 'fetch: DELETE',
-                    "thirdattack": 'useEffect Hook'
+                    "firstattack": "destructuring props",
+                    "secondattack": "fetch: DELETE",
+                    "thirdattack": "useEffect Hook"
                 }
             ]
         },
@@ -189,9 +189,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'destructuring props',
-                    "secondattack": 'arrow function',
-                    "thirdattack": 'fetch: DELETE'
+                    "firstattack": "destructuring props",
+                    "secondattack": "arrow function",
+                    "thirdattack": "fetch: DELETE"
                 }
             ]
         },
@@ -202,9 +202,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'useEffect Hook',
-                    "secondattack": 'destructuring props',
-                    "thirdattack": 'fetch: DELETE'
+                    "firstattack": "useEffect Hook",
+                    "secondattack": "destructuring props",
+                    "thirdattack": "fetch: DELETE"
                 }
             ]
         },
@@ -215,9 +215,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'arrow function',
-                    "secondattack": 'fetch: DELETE',
-                    "thirdattack": 'Redirect Component'
+                    "firstattack": "arrow function",
+                    "secondattack": "fetch: DELETE",
+                    "thirdattack": "redirect component"
                 }
             ]
         },
@@ -228,9 +228,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'useEffect Hook',
-                    "secondattack": 'Redirect Component',
-                    "thirdattack": 'arrow function'
+                    "firstattack": "useEffect Hook",
+                    "secondattack": "redirect component",
+                    "thirdattack": "arrow function"
                 }
             ]
         },
@@ -241,9 +241,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'useEffect Hook',
-                    "secondattack": 'Redirect Component',
-                    "thirdattack": 'destructuring props'
+                    "firstattack": "useEffect Hook",
+                    "secondattack": "Redirect Component",
+                    "thirdattack": "destructuring props"
                 }
             ]
         },
@@ -254,9 +254,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'destructuring props',
-                    "secondattack": 'Redirect Component',
-                    "thirdattack": 'arrow function'
+                    "firstattack": "destructuring props",
+                    "secondattack": "Redirect Component",
+                    "thirdattack": "arrow function"
                 }
             ]
         },
@@ -267,9 +267,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'useEffect Hook',
-                    "secondattack": 'Redirect Component',
-                    "thirdattack": 'destructuring props'
+                    "firstattack": "useEffect Hook",
+                    "secondattack": "Redirect Component",
+                    "thirdattack": "destructuring props"
                 }
             ]
         },
@@ -280,9 +280,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'Redirect Component',
-                    "secondattack": 'fetch: DELETE',
-                    "thirdattack": 'arrow function'
+                    "firstattack": "Redirect Component",
+                    "secondattack": "fetch: DELETE",
+                    "thirdattack": "arrow function"
                 }
             ]
         },
@@ -293,9 +293,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'useEffect Hook',
-                    "secondattack": 'destructuring props',
-                    "thirdattack": 'arrow function'
+                    "firstattack": "useEffect Hook",
+                    "secondattack": "destructuring props",
+                    "thirdattack": "arrow function"
                 }
             ]
         },
@@ -306,9 +306,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'arrow function',
-                    "secondattack": 'Redirect Component',
-                    "thirdattack": 'destructuring props'
+                    "firstattack": "arrow function",
+                    "secondattack": "Redirect Component",
+                    "thirdattack": "destructuring props"
                 }
             ]
         },
@@ -319,9 +319,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'useEffect Hook',
-                    "secondattack": 'Redirect Component',
-                    "thirdattack": 'arrow function'
+                    "firstattack": "useEffect Hook",
+                    "secondattack": "Redirect Component",
+                    "thirdattack": "arrow function"
                 }
             ]
         },
@@ -332,9 +332,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'useEffect Hook',
-                    "secondattack": 'destructuring props',
-                    "thirdattack": 'fetch: DELETE'
+                    "firstattack": "useEffect Hook",
+                    "secondattack": "destructuring props",
+                    "thirdattack": "fetch: DELETE"
                 }
             ]
         },
@@ -345,9 +345,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'arrow function',
-                    "secondattack": 'fetch: DELETE',
-                    "thirdattack": 'Redirect Component'
+                    "firstattack": "arrow function",
+                    "secondattack": "fetch: DELETE",
+                    "thirdattack": "Redirect Component"
                 }
             ]
         },
@@ -358,9 +358,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'useEffect Hook',
-                    "secondattack": 'Redirect Component',
-                    "thirdattack": 'fetch: DELETE'
+                    "firstattack": "useEffect Hook",
+                    "secondattack": "Redirect Component",
+                    "thirdattack": "fetch: DELETE"
                 }
             ]
         },
@@ -371,9 +371,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'Redirect Component',
-                    "secondattack": 'destructuring props',
-                    "thirdattack": 'fetch: DELETE'
+                    "firstattack": "Redirect Component",
+                    "secondattack": "destructuring props",
+                    "thirdattack": "fetch: DELETE"
                 }
             ]
         },
@@ -384,9 +384,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'fetch: DELETE',
-                    "secondattack": 'Redirect Component',
-                    "thirdattack": 'destructuring props'
+                    "firstattack": "fetch: DELETE",
+                    "secondattack": "Redirect Component",
+                    "thirdattack": "destructuring props"
                 }
             ]
         },
@@ -397,9 +397,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'fetch: DELETE',
-                    "secondattack": 'destructuring props',
-                    "thirdattack": 'arrow function'
+                    "firstattack": "fetch: DELETE",
+                    "secondattack": "destructuring props",
+                    "thirdattack": "arrow function"
                 }
             ]
         }
@@ -409,6 +409,8 @@
             "id": 1,
             "name": "Person 1",
             "teamName" : "Team 1"
+            "fighterList" : [],
+            "trophies" : []
         },
     ]
 }
