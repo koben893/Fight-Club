@@ -23,6 +23,6 @@ function createSet() {
 }
 
 
-for (let i = 0; i < 30; i++) {
-    console.log(createSet());
-}
+// for (let i = 0; i < 30; i++) {
+//     console.log(createSet());
+// }
