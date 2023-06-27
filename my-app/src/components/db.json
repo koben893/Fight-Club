@@ -99,7 +99,7 @@
             "abilities":[
                 {
                     "firstattack": "useEffect Hook",
-                    "secondattack": ""redirect component",
+                    "secondattack": "redirect component",
                     "thirdattack": "arrow function"
                 }
             ]
