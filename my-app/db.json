@@ -408,9 +408,9 @@
         {
             "id": 1,
             "name": "Person 1",
-            "teamName" : "Team 1"
+            "teamName" : "Team 1",
             "fighterList" : [],
             "trophies" : []
-        },
+        }
     ]
 }
