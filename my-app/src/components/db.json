@@ -7,9 +7,9 @@
             "image": "",
             "abilities":[
                 {
-                    "firstattack": 'fetch: DELETE',
-                    "secondattack": 'useEffect Hook',
-                    "thirdattack": 'destructuring props'
+                    "firstattack": "fetch: DELETE",
+                    "secondattack": "useEffect Hook",
+                    "thirdattack": "destructuring props"
                 }
             ]
         },
