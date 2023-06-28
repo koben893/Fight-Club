@@ -58,7 +58,7 @@ function MonsterContainer({cohort, teamName, fighterList, trophies}) {
               <h5>Abilities</h5>
               {moveset}
             </ul>
-            <h5>{displayedCoder.tier}</h5>
+            <h5>Tier: {displayedCoder.tier}</h5>
           </div>
       </div>
       <div>
