@@ -1,22 +1,29 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import MonsterContainer from './MonsterContainer'
 import CreateUser from './CreateUser'
-//conditional rendering, where if activeUser exists then show teaminfo else show createUser Form
-//on rendering TeamPage always render fighterList, but form renders only when user does not exist, otherwise render teamInfo
-function BattleTeamPage({cohort, activeUser}) {
+import FighterContainer from './FighterContainer'
+import TeamContainer from './TeamContainer'
+import FighterInfo from './FighterInfo'
+
+function BattleTeamPage({cohort, activeUser, teamList, setTeamList}) {
+  const [displayedCoder, setDisplayedCoder] = useState({id:'', name:'', abilities:[]})
+
+  const handleSelect = (id) => {
+    const selectedCoder = cohort.filter((singleCoder) => singleCoder.id === id)
+    setDisplayedCoder(selectedCoder[0])
+  }
+
   const teamInfo = activeUser.name ?
-    <MonsterContainer 
-      cohort={cohort}
-      key={activeUser.id}
-      teamName={activeUser.teamName}
-      fighterList={activeUser.fighterList}
-    />
+    <h1>{activeUser.teamName}</h1>
     :
     <CreateUser cohort={cohort}/>
     
   return (
     <div>
       {teamInfo}
+      <TeamContainer teamList={teamList} handleSelect={handleSelect}/>
+      <FighterInfo displayedCoder={displayedCoder} teamList={teamList} setTeamList={setTeamList}/>
+      <FighterContainer cohort={cohort} handleSelect={handleSelect}/>
     </div>
   )
 }

@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 
-function MonsterCard({id, name, image, tier, handleSelect}) {
+// compoonent that renders coders card
+
+function MonsterCard({id, name, image, handleSelect}) {
   const [selected, setSelected] = useState(false)
 
   const handleClick = () => {
