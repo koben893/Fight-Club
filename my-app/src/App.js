@@ -32,7 +32,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/teamPage">
-          <BattleTeamPage cohort={cohort} userList={userList}/>
+          <BattleTeamPage cohort={cohort} activeUser={activeUser}/>
         </Route>
         <Route path="/arena">
           <BattleArenaPage />
