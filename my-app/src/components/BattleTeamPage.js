@@ -1,6 +1,6 @@
 import React from 'react'
 import MonsterContainer from './MonsterContainer'
-
+import CreateUser from './CreateUser'
 //conditional rendering, where if activeUser exists then show teaminfo else show createUser Form
 //on rendering TeamPage always render fighterList, but form renders only when user does not exist, otherwise render teamInfo
 function BattleTeamPage({cohort, activeUser}) {
@@ -12,7 +12,7 @@ function BattleTeamPage({cohort, activeUser}) {
       fighterList={activeUser.fighterList}
     />
     :
-    'no login'
+    <CreateUser cohort={cohort}/>
     
   return (
     <div>
