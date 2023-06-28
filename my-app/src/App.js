@@ -6,6 +6,7 @@ import BattleArenaPage from './components/BattleArenaPage';
 import BattleTeamPage from './components/BattleTeamPage';
 import TrophiesPage from './components/TrophiesPage';
 import Navbar from './components/Navbar';
+import Login from './components/Login';
 
 function App() {
   const [cohort, setCohort] = useState([])
@@ -29,6 +30,7 @@ function App() {
   return (
     <div className="App">
       <h1>Title of Our App</h1>
+      <Login userList={userList} handleActUser={handleActUser} activeUser={activeUser}/>
       <Navbar />
       <Switch>
         <Route path="/teamPage">

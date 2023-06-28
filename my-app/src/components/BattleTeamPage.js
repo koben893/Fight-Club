@@ -10,7 +10,6 @@ function BattleTeamPage({cohort, activeUser}) {
       key={activeUser.id}
       teamName={activeUser.teamName}
       fighterList={activeUser.fighterList}
-      trophies={activeUser.trophies}
     />
     :
     'no login'

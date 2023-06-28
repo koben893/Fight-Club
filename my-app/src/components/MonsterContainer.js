@@ -1,15 +1,14 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import MonsterCard from './MonsterCard'
 
 
 //create an internal state for fighterList then make sure to update activeuser fighterList when finished, initialize based on if user.fighterList exists
-function MonsterContainer({cohort, teamName, fighterList, trophies}) {
+function MonsterContainer({ cohort, teamName, fighterList }) {
   const [displayedCoder, setDisplayedCoder] = useState(cohort[0])
   const [onTeam, setOnTeam] = useState()
   const [teamList, setTeamList] = useState(fighterList)
   const [points, setPoints] = useState(5)
 
-  const isCoderOnTeam = teamList.includes(displayedCoder)
 
   const addTeamMember = () => {
     setTeamList((currentTeamList) => [...currentTeamList, displayedCoder])
@@ -33,9 +32,8 @@ function MonsterContainer({cohort, teamName, fighterList, trophies}) {
     })
     return accumulator
   }, {})
-    // teamList[0]
 
-  const renderedCoders = cohort.map(coder => 
+  const renderedCoders = cohort.map(coder =>
     <MonsterCard
       key={coder.id}
       id={coder.id}
@@ -46,7 +44,7 @@ function MonsterContainer({cohort, teamName, fighterList, trophies}) {
     />
   )
 
-  const renderedTeams = teamList.map(coder => 
+  const renderedTeams = teamList.map(coder =>
     <MonsterCard
       key={coder.id}
       id={coder.id}
@@ -56,7 +54,7 @@ function MonsterContainer({cohort, teamName, fighterList, trophies}) {
     />
   )
 
-  const moveset = displayedCoder.abilities.map(moves => { 
+  const moveset = displayedCoder.abilities.map(moves => {
     return (
       <ul key={displayedCoder.id}>
         <p>{moves.firstattack}</p>
@@ -67,65 +65,15 @@ function MonsterContainer({cohort, teamName, fighterList, trophies}) {
   })
 
   useEffect(() => {
-    if (isCoderOnTeam) {
-      return setOnTeam(true)
-    } else {
-      return setOnTeam(false)
+    const copy = [...teamList];
+    const copyD = { ...displayedCoder }
+    if (copy.length === 0) setOnTeam(false);
+    else {
+      const found = copy.find((element) => element.id === copyD.id)
+      if (found) setOnTeam(true);
+      else setOnTeam(false);
     }
-  },[isCoderOnTeam, displayedCoder])
-
-  // useEffect(() => {
-  //   fetchData()
-  // }, [])
-
-  // const fetchData = async () => {
-  //   try {
-  //     const response = await fetch("http://localhost:3000/Users")
-  //     const data = await response.json()
-  //     setItems(data)
-  //   } catch (error) {
-  //     console.log('error fetching')
-  //   }
-  // }
-
-  // const createTeam = async (teamList)
-
-  // const createTeam = () => {
-  //      const requestOptions = {
-  //     method: 'PATCH',
-  //     headers: {'Content-Type' : 'application/json'},
-  //     body: JSON.stringify(teamList)
-  //   }
-  //   try {
-  //     const response = fetch("http://localhost:3000/Users/", requestOptions)
-  //     if (response.ok) {
-  //       console.log('patch works')
-  //     } else {
-  //       console.log('patch failed')
-  //     } 
-  //   } catch (error) {
-  //       console.log('error')
-  //   }
-  // }
-
-  // const postTeam = () => {
-  //   const requestOptions = {
-  //     method: 'POST',
-  //     headers: {'Content-Type' : 'application/json'},
-  //     body: JSON.stringify('new user team set up with')
-  //   }
-  //   try {
-  //     const response = fetch("http://localhost:3000/Users", requestOptions)
-  //     if (response.ok) {
-  //       console.log('post works')
-  //     } else {
-  //       console.log('post failed')
-  //     } 
-  //   } catch (error) {
-  //       console.log('error')
-  //   }
-  //   console.log(displayedCoder)
-  // }
+  }, [teamList, displayedCoder])
 
   return (
     <div>
@@ -135,33 +83,32 @@ function MonsterContainer({cohort, teamName, fighterList, trophies}) {
       </div>
       <div>
         <h1>Team Info</h1>
-          <h2>{teamName}</h2>
-          {renderedTeams}
-          <ul>{trophies}</ul>
+        <h2>{teamName}</h2>
+        {renderedTeams}
       </div>
       <div>
         <h1>Fighter Info</h1>
-          <div>
-            <h3>{displayedCoder.name}</h3>
-            <ul>
-              <h5>Abilities</h5>
-              {moveset}
-            </ul>
-            <h5>Tier: {displayedCoder.tier}</h5>
-          </div>
-          <div>{onTeam ? 
-            <button onClick={removeTeamMember}>Remove</button>
-            : 
-            <button onClick={addTeamMember}>Add</button>}
-          </div>
-          {/* <button onClick={createTeam}>Create Team</button> */}
+        <div>
+          <h3>{displayedCoder.name}</h3>
+          <ul>
+            <h5>Abilities</h5>
+            {moveset}
+          </ul>
+          <h5>Tier: {displayedCoder.tier}</h5>
+        </div>
+        <div>{onTeam ?
+          <button onClick={removeTeamMember}>Remove</button>
+          :
+          <button onClick={addTeamMember}>Add</button>}
+        </div>
+        {/* <button onClick={createTeam}>Create Team</button> */}
       </div>
       <div>
         <h1>Choose Your Team</h1>
         {renderedCoders}
       </div>
     </div>
-    
+
   )
 }
 
