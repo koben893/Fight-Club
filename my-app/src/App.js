@@ -10,7 +10,8 @@ import Navbar from './components/Navbar';
 function App() {
   const [cohort, setCohort] = useState([])
   const [userList, setUserList] = useState([])
-  const [activeUser, setActiveUser] = useState({});
+  const [activeUser, setActiveUser] = useState({})
+  const [opponents, setOpponents] = useState([]);
 
   const handleActUser = (activeUser) => setActiveUser(activeUser);
 
@@ -24,6 +25,12 @@ function App() {
     fetch("http://localhost:3000/users")
       .then(r => r.json())
       .then(user => setUserList(user))
+  }, [])
+
+  useEffect(() => {
+    fetch("http://localhost:3000/users")
+      .then(r => r.json())
+      .then(opponents => setOpponents(opponents))
   }, [])
 
   return (
@@ -41,7 +48,7 @@ function App() {
           <TrophiesPage />
         </Route>
         <Route exact path="/">
-          <Home userList={userList} cohort={cohort} activeUser={activeUser} handleActUser={handleActUser}/>
+          <Home userList={userList} cohort={cohort} activeUser={activeUser} handleActUser={handleActUser} opponents={opponents}/>
         </Route>
       </Switch>
     </div>
