@@ -12,6 +12,8 @@ function App() {
   const [userList, setUserList] = useState([])
   const [activeUser, setActiveUser] = useState({});
 
+  const handleActUser = (activeUser) => setActiveUser(activeUser);
+
   useEffect(() => {
     fetch("http://localhost:3000/fighters")
       .then(r => r.json())
@@ -39,7 +41,7 @@ function App() {
           <TrophiesPage />
         </Route>
         <Route exact path="/">
-          <Home userList={userList} cohort={cohort} activeUser={activeUser} setActiveUser={setActiveUser}/>
+          <Home userList={userList} cohort={cohort} activeUser={activeUser} handleActUser={handleActUser}/>
         </Route>
       </Switch>
     </div>
