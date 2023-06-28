@@ -2,7 +2,6 @@ import { useState } from "react"
 
 function Login({ userList, handleActUser, activeUser}) {
     const [userLogIn, setUserLogIn] = useState('');
-    //const [logState, setLogState] = useState(false);
 
     const checkUser = () => {
         if(activeUser.name){
