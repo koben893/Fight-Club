@@ -1,23 +1,26 @@
 import { useState } from "react"
 
-function Login({ userList, handleActUser }) {
-    const [logIn, setLogIn] = useState('');
-    const [logState, setLogState] = useState(false);
+function Login({ userList, handleActUser, activeUser}) {
+    const [userLogIn, setUserLogIn] = useState('');
+    //const [logState, setLogState] = useState(false);
 
     const checkUser = () => {
-        if (userList[0].name === logIn) {
-            setLogState(true);
-            handleActUser(userList[0])
+        if(activeUser.name){
+            handleActUser({});
         }
-        else console.log("not a user")
+        else if (userList[0].name === userLogIn) {
+            handleActUser(userList[0]);
+            setUserLogIn('');
+        }
+        else alert("not a user");
     }
 
     return (
         <div>
             <label htmlFor="name">User Name</label>
-            <input type="text" name="name" value={logIn} onChange={e => { setLogIn(e.target.value) }}></input>
-            <button onClick={checkUser}>{logState ? "Logged In" : "Click To Log In"}</button>
-            <p>{logState ? 'Welcome to The Game: ' + logIn : "Please Log In or Go to Create Your Team Page" }</p>
+            <input type="text" name="name" value={userLogIn} onChange={e => { setUserLogIn(e.target.value)}} disabled={activeUser.name} ></input>
+            <button onClick={checkUser}>{activeUser.name ? "log out" : "log in"}</button>
+            <p>{activeUser.name ? 'Welcome to The Game: ' + userLogIn : "Please Log In or Go to Create Your Team Page" }</p>
         </div>
     )
 }
