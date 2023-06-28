@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import FighterContainer from './FighterContainer'
+
 //contains a userForm for creating userName TeamName also want to render monsterContainer to select Fighter List
 const empty = { name: '', teamName: '', fighterList: [] }
 function CreateUser({cohort}) {
@@ -18,13 +18,12 @@ function CreateUser({cohort}) {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <label htmlFor='uname'>User Name:</label>
+        <label htmlFor='uname'>Create User Name:</label>
         <input type='text' id='uname' name='uname' value={teamInfo.name} onChange={e => setTeaminfo(current => ({ ...current, name: e.target.value }))}></input>
-        <label htmlFor='uname'>Team Name:</label>
+        <label htmlFor='uname'>Create Team Name:</label>
         <input type='text' id='tname' name='tname' value={teamInfo.teamName} onChange={e => setTeaminfo(current => ({ ...current, teamName: e.target.value }))}></input>
         <input type="submit" value="Submit"></input>
       </form>
-      <FighterContainer cohort={cohort}/>
     </div>
   )
 }

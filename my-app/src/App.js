@@ -11,9 +11,16 @@ import Login from './components/Login';
 function App() {
   const [cohort, setCohort] = useState([])
   const [userList, setUserList] = useState([])
-  const [activeUser, setActiveUser] = useState({});
+  const [activeUser, setActiveUser] = useState({})
+  const [teamList, setTeamList] = useState([{id:0}]);
 
-  const handleActUser = (activeUser) => setActiveUser(activeUser);
+  const handleActUser = (activeUser) => setActiveUser(activeUser)
+
+  useEffect(() => {
+    if (activeUser.fighterList) {
+    setTeamList(activeUser.fighterList)
+    }
+  }, [activeUser])
 
   useEffect(() => {
     fetch("http://localhost:3000/fighters")
@@ -34,7 +41,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/teamPage">
-          <BattleTeamPage cohort={cohort} activeUser={activeUser}/>
+          <BattleTeamPage cohort={cohort} activeUser={activeUser} teamList={teamList} setTeamList={setTeamList}/>
         </Route>
         <Route path="/arena">
           <BattleArenaPage />
