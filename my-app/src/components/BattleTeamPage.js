@@ -3,18 +3,18 @@ import MonsterContainer from './MonsterContainer'
 
 //conditional rendering, where if activeUser exists then show teaminfo else show createUser Form
 //on rendering TeamPage always render fighterList, but form renders only when user does not exist, otherwise render teamInfo
-function BattleTeamPage({cohort, userList}) {
-  const teamInfo = userList.map(user => {
-    return <MonsterContainer 
+function BattleTeamPage({cohort, activeUser}) {
+  const teamInfo = activeUser.name ?
+    <MonsterContainer 
       cohort={cohort}
-      key={user.id}
-      teamName={user.teamName}
-      fighterList={user.fighterList}
-      trophies={user.trophies}
+      key={activeUser.id}
+      teamName={activeUser.teamName}
+      fighterList={activeUser.fighterList}
+      trophies={activeUser.trophies}
     />
-  }
-    )
-
+    :
+    'no login'
+    
   return (
     <div>
       {teamInfo}

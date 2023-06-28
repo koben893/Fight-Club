@@ -1,430 +1,430 @@
 {
-    "fighters": [
+  "fighters": [
+    {
+      "id": 1,
+      "name": "Adam Meow",
+      "tier": 3,
+      "image": "",
+      "abilities": [
         {
-            "id": 1,
-            "name": "Adam Meow",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "fetch: DELETE",
-                    "secondattack": "useEffect Hook",
-                    "thirdattack": "destructuring props"
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "name": "Emiley Poe-tay-toe",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "useEffect Hook",
-                    "secondattack": "destructuring props",
-                    "thirdattack": "arrow function"
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "name": "Alexis Bougie",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "destructuring props",
-                    "secondattack": "useEffect Hook",
-                    "thirdattack": "Redirect Component"
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "name": "Amelia Earheart",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "destructuring props",
-                    "secondattack": "useEffect Hook",
-                    "thirdattack": "fetch: DELETE"
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "name": "Erica Belter",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "destructuring props",
-                    "secondattack": "Redirect Component",
-                    "thirdattack": "useEffect Hook"
-                }
-            ]
-        },
-        {
-            "id": 6,
-            "name": "Francesco Weeee",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "fetch: DELETE",
-                    "secondattack": "destructuring props",
-                    "thirdattack": "useEffect Hook"
-                }
-            ]
-        },
-        {
-            "id": 7,
-            "name": "Jeffery Arbitrary",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "redirect component",
-                    "secondattack": "arrow function",
-                    "thirdattack": "destructuring props"
-                }
-            ]
-        },
-        {
-            "id": 8,
-            "name": "Jessica Ronaldo",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "useEffect Hook",
-                    "secondattack": "redirect component",
-                    "thirdattack": "arrow function"
-                }
-            ]
-        },
-        {
-            "id": 9,
-            "name": "Jonathan Grabeverything",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "fetch: DELETE",
-                    "secondattack": "useEffect Hook",
-                    "thirdattack": "arrow function"
-                }
-            ]
-        },
-        {
-            "id": 10,
-            "name": "Kevin Prozack",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "useEffect Hook",
-                    "secondattack": "destructuring props",
-                    "thirdattack": "arrow function"
-                }
-            ]
-        },
-        {
-            "id": 11,
-            "name": "Marc Kittycat",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "useEffect Hook",
-                    "secondattack": "fetch: DELETE",
-                    "thirdattack": "arrow function"
-                }
-            ]
-        },
-        {
-            "id": 12,
-            "name": "Megan Harry",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "arrow function",
-                    "secondattack": "redirect component",
-                    "thirdattack": "destructuring props"
-                }
-            ]
-        },
-        {
-            "id": 13,
-            "name": "Paul Marchalot",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "fetch: DELETE",
-                    "secondattack": "redirect component",
-                    "thirdattack": "arrow function"
-                }
-            ]
-        },
-        {
-            "id": 14,
-            "name": "Priyam Yaaas",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "destructuring props",
-                    "secondattack": "fetch: DELETE",
-                    "thirdattack": "useEffect Hook"
-                }
-            ]
-        },
-        {
-            "id": 15,
-            "name": "Sadaf Sadwick",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "destructuring props",
-                    "secondattack": "arrow function",
-                    "thirdattack": "fetch: DELETE"
-                }
-            ]
-        },
-        {
-            "id": 16,
-            "name": "Sean Steamyns",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "useEffect Hook",
-                    "secondattack": "destructuring props",
-                    "thirdattack": "fetch: DELETE"
-                }
-            ]
-        },
-        {
-            "id": 17,
-            "name": "Sebastian Shortinez",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "arrow function",
-                    "secondattack": "fetch: DELETE",
-                    "thirdattack": "redirect component"
-                }
-            ]
-        },
-        {
-            "id": 18,
-            "name": "Shanley Caspoor",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "useEffect Hook",
-                    "secondattack": "redirect component",
-                    "thirdattack": "arrow function"
-                }
-            ]
-        },
-        {
-            "id": 19,
-            "name": "Suan Soon(Ron)",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "useEffect Hook",
-                    "secondattack": "Redirect Component",
-                    "thirdattack": "destructuring props"
-                }
-            ]
-        },
-        {
-            "id": 20,
-            "name": "Syed Hamalot must be pair",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "destructuring props",
-                    "secondattack": "Redirect Component",
-                    "thirdattack": "arrow function"
-                }
-            ]
-        },
-        {
-            "id": 21,
-            "name": "Syeda Hamalittle must be a pair",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "useEffect Hook",
-                    "secondattack": "Redirect Component",
-                    "thirdattack": "destructuring props"
-                }
-            ]
-        },
-        {
-            "id": 22,
-            "name": "Tj Lister",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "Redirect Component",
-                    "secondattack": "fetch: DELETE",
-                    "thirdattack": "arrow function"
-                }
-            ]
-        },
-        {
-            "id": 23,
-            "name": "Nolan Pummel",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "useEffect Hook",
-                    "secondattack": "destructuring props",
-                    "thirdattack": "arrow function"
-                }
-            ]
-        },
-        {
-            "id": 24,
-            "name": "Andrew aka New Andrew, when dead becomes old andrew",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "arrow function",
-                    "secondattack": "Redirect Component",
-                    "thirdattack": "destructuring props"
-                }
-            ]
-        },
-        {
-            "id": 25,
-            "name": "Adam 2.0 aka better Adam",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "useEffect Hook",
-                    "secondattack": "Redirect Component",
-                    "thirdattack": "arrow function"
-                }
-            ]
-        },
-        {
-            "id": 26,
-            "name": "Ammar the captain, catchphrase when wins: I am the captain now",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "useEffect Hook",
-                    "secondattack": "destructuring props",
-                    "thirdattack": "fetch: DELETE"
-                }
-            ]
-        },
-        {
-            "id": 27,
-            "name": "Harjas Barjas",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "arrow function",
-                    "secondattack": "fetch: DELETE",
-                    "thirdattack": "Redirect Component"
-                }
-            ]
-        },
-        {
-            "id": 28,
-            "name": "Michael Fubar",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "useEffect Hook",
-                    "secondattack": "Redirect Component",
-                    "thirdattack": "fetch: DELETE"
-                }
-            ]
-        },
-        {
-            "id": 29,
-            "name": "Robert Paisan",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "Redirect Component",
-                    "secondattack": "destructuring props",
-                    "thirdattack": "fetch: DELETE"
-                }
-            ]
-        },
-        {
-            "id": 30,
-            "name": "Will Upincamp",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "fetch: DELETE",
-                    "secondattack": "Redirect Component",
-                    "thirdattack": "destructuring props"
-                }
-            ]
-        },
-        {
-            "id": 31,
-            "name": "Yu me? No yu",
-            "tier": 1,
-            "image": "",
-            "abilities":[
-                {
-                    "firstattack": "fetch: DELETE",
-                    "secondattack": "destructuring props",
-                    "thirdattack": "arrow function"
-                }
-            ]
+          "firstattack": "fetch: DELETE",
+          "secondattack": "useEffect Hook",
+          "thirdattack": "destructuring props"
         }
-    ],
-    "Users": [
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Emiley Poe-tay-toe",
+      "tier": 3,
+      "image": "",
+      "abilities": [
         {
-            "id": 1,
-            "name": "Person 1",
-            "teamName" : "Team 1",
-            "fighterList" : [
-                {
-                    "id": 31,
-                    "name": "Yu me? No yu",
-                    "tier": 1,
-                    "image": "",
-                    "abilities":[
-                        {
-                            "firstattack": "fetch: DELETE",
-                            "secondattack": "destructuring props",
-                            "thirdattack": "arrow function"
-                        }
-                    ]
-                }
-            ],
-            "trophies" : []
+          "firstattack": "useEffect Hook",
+          "secondattack": "destructuring props",
+          "thirdattack": "arrow function"
         }
-    ]
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Alexis Bougie",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "destructuring props",
+          "secondattack": "useEffect Hook",
+          "thirdattack": "Redirect Component"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Amelia Earheart",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "destructuring props",
+          "secondattack": "useEffect Hook",
+          "thirdattack": "fetch: DELETE"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Erica Belter",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "destructuring props",
+          "secondattack": "Redirect Component",
+          "thirdattack": "useEffect Hook"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Francesco Weeee",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "fetch: DELETE",
+          "secondattack": "destructuring props",
+          "thirdattack": "useEffect Hook"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Jeffery Arbitrary",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "redirect component",
+          "secondattack": "arrow function",
+          "thirdattack": "destructuring props"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Jessica Ronaldo",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "useEffect Hook",
+          "secondattack": "redirect component",
+          "thirdattack": "arrow function"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Jonathan Grabeverything",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "fetch: DELETE",
+          "secondattack": "useEffect Hook",
+          "thirdattack": "arrow function"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Kevin Prozack",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "useEffect Hook",
+          "secondattack": "destructuring props",
+          "thirdattack": "arrow function"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Marc Kittycat",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "useEffect Hook",
+          "secondattack": "fetch: DELETE",
+          "thirdattack": "arrow function"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Megan Harry",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "arrow function",
+          "secondattack": "redirect component",
+          "thirdattack": "destructuring props"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Paul Marchalot",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "fetch: DELETE",
+          "secondattack": "redirect component",
+          "thirdattack": "arrow function"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Priyam Yaaas",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "destructuring props",
+          "secondattack": "fetch: DELETE",
+          "thirdattack": "useEffect Hook"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Sadaf Sadwick",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "destructuring props",
+          "secondattack": "arrow function",
+          "thirdattack": "fetch: DELETE"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Sean Steamyns",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "useEffect Hook",
+          "secondattack": "destructuring props",
+          "thirdattack": "fetch: DELETE"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Sebastian Shortinez",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "arrow function",
+          "secondattack": "fetch: DELETE",
+          "thirdattack": "redirect component"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Shanley Caspoor",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "useEffect Hook",
+          "secondattack": "redirect component",
+          "thirdattack": "arrow function"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Suan Soon(Ron)",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "useEffect Hook",
+          "secondattack": "Redirect Component",
+          "thirdattack": "destructuring props"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Syed Hamalot must be pair",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "destructuring props",
+          "secondattack": "Redirect Component",
+          "thirdattack": "arrow function"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Syeda Hamalittle must be a pair",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "useEffect Hook",
+          "secondattack": "Redirect Component",
+          "thirdattack": "destructuring props"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Tj Lister",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "Redirect Component",
+          "secondattack": "fetch: DELETE",
+          "thirdattack": "arrow function"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Nolan Pummel",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "useEffect Hook",
+          "secondattack": "destructuring props",
+          "thirdattack": "arrow function"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Andrew aka New Andrew, when dead becomes old andrew",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "arrow function",
+          "secondattack": "Redirect Component",
+          "thirdattack": "destructuring props"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Adam 2.0 aka better Adam",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "useEffect Hook",
+          "secondattack": "Redirect Component",
+          "thirdattack": "arrow function"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Ammar the captain, catchphrase when wins: I am the captain now",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "useEffect Hook",
+          "secondattack": "destructuring props",
+          "thirdattack": "fetch: DELETE"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Harjas Barjas",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "arrow function",
+          "secondattack": "fetch: DELETE",
+          "thirdattack": "Redirect Component"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Michael Fubar",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "useEffect Hook",
+          "secondattack": "Redirect Component",
+          "thirdattack": "fetch: DELETE"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Robert Paisan",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "Redirect Component",
+          "secondattack": "destructuring props",
+          "thirdattack": "fetch: DELETE"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Will Upincamp",
+      "tier": 1,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "fetch: DELETE",
+          "secondattack": "Redirect Component",
+          "thirdattack": "destructuring props"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Yu me? No yu",
+      "tier": 2,
+      "image": "",
+      "abilities": [
+        {
+          "firstattack": "fetch: DELETE",
+          "secondattack": "destructuring props",
+          "thirdattack": "arrow function"
+        }
+      ]
+    }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "name": "Person 1",
+      "teamName": "Team 1",
+      "fighterList": [
+        {
+          "id": 31,
+          "name": "Yu me? No yu",
+          "tier": 2,
+          "image": "",
+          "abilities": [
+            {
+              "firstattack": "fetch: DELETE",
+              "secondattack": "destructuring props",
+              "thirdattack": "arrow function"
+            }
+          ]
+        }
+      ],
+      "trophies": []
+    }
+  ]
 }
