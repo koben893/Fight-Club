@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import MonsterCard from './MonsterCard'
 
+
+//create an internal state for fighterList then make sure to update activeuser fighterList when finished, initialize based on if user.fighterList exists
 function MonsterContainer({cohort, teamName, fighterList, trophies}) {
   const [displayedCoder, setDisplayedCoder] = useState(cohort[0])
 
@@ -56,7 +58,7 @@ function MonsterContainer({cohort, teamName, fighterList, trophies}) {
               <h5>Abilities</h5>
               {moveset}
             </ul>
-            <h5>{displayedCoder.tier}</h5>
+            <h5>Tier: {displayedCoder.tier}</h5>
           </div>
       </div>
       <div>
