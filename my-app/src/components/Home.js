@@ -1,3 +1,4 @@
+
 import Login from './Login'
 import TeamPreviewCard from "./TeamPreviewCard";
 import OpponentGen from './OpponentGen';
@@ -28,9 +29,10 @@ function Home({ cohort, userList, activeUser, handleActUser, opponents }) {
 
 
 
+function Home({ cohort, activeUser}) {
+
     return (
         <div>
-            <Login userList={userList} handleActUser={handleActUser} activeUser={activeUser}/>
             {displayACard}
             <span>VS</span>
             <TeamPreviewCard player={playerTwo}/>

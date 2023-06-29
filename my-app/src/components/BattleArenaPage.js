@@ -1,6 +1,8 @@
 import React from 'react'
+import TeamPreviewCard from './TeamPreviewCard'
 
-function BattleArenaPage() {
+function BattleArenaPage({activeUser}) {
+
   return (
     <div>BattleArenaPage</div>
   )

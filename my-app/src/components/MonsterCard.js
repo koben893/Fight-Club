@@ -1,6 +1,9 @@
 import React, {useState} from 'react'
+import './Sprite.css'
 
-function MonsterCard({id, name, image, tier, handleSelect}) {
+// compoonent that renders coders card
+
+function MonsterCard({id, name, image, handleSelect}) {
   const [selected, setSelected] = useState(false)
 
   const handleClick = () => {
@@ -9,9 +12,10 @@ function MonsterCard({id, name, image, tier, handleSelect}) {
   }
 
   return (
-    <div onClick={handleClick}>
-      {/* {selected ? selectedCard : <img src={image} alt={name}/>} */}
-      <img src={image} alt={name}/>
+    <div>
+      <div onClick={handleClick}>
+        {selected ? <img src={image} alt={name} className='selected-fighters'/> : <img src={image} alt={name} className='fighters'/>}
+      </div>
     </div>
   )
 }
