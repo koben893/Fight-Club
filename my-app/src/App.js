@@ -12,7 +12,7 @@ function App() {
   const [cohort, setCohort] = useState([])
   const [userList, setUserList] = useState([])
   const [activeUser, setActiveUser] = useState({})
-
+  const [opponents, setOpponents] = useState([]);
   const handleLogInUser = (activeUser) => setActiveUser(activeUser)
 
   const handleUpdateActUser = (newUser) => {
@@ -38,6 +38,12 @@ function App() {
       .then(user => setUserList(user))
   }, [])
 
+  useEffect(() => {
+    fetch("http://localhost:3000/fighters")
+      .then(r => r.json())
+      .then(opponents => setOpponents(opponents))
+  }, [])
+
   return (
     <div className="App">
       <h1>Title of Our App</h1>
@@ -55,7 +61,7 @@ function App() {
           <TrophiesPage />
         </Route>
         <Route exact path="/">
-          <Home cohort={cohort} activeUser={activeUser} />
+          <Home userList={userList} cohort={cohort} activeUser={activeUser} handleActUser={handleActUser} opponents={opponents}/>
         </Route>
       </Switch>
     </div>
