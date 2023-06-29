@@ -1,4 +1,4 @@
-import Login from './Login'
+
 import TeamPreviewCard from "./TeamPreviewCard";
 import OpponentGen from './OpponentGen';
 import { useState } from 'react';
@@ -16,15 +16,18 @@ function Home({ cohort, activeUser, opponents }) {
     
     const handleClick = () => {
         setRandomOpponent([]);
-        for( var i = 0; i < 3; i++){
-            let randomNum = randomNumberInRange(1, 31);
-            if(randomNum !== randomOpponent)
-            {
-                setRandomOpponent(cur=>[...cur, randomNum])
-            }
-        }
-        console.log(randomOpponent)
+        const randomNum = recurRandArr();
+        setRandomOpponent(randomNum)
     };
+
+    function recurRandArr(l=0, randArr= ['', '', ''], eleA = [1, 2, 3 ,4 ,5 ,6, 7, 8, 9, 10, 11, 12, 13, 14, 15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]) {
+        if (l === 3) return randArr;
+        let ioEl = randomNumberInRange(0, eleA.length -1);
+        randArr[l] = eleA[ioEl];
+        eleA.splice(ioEl, 1);
+        return recurRandArr(l + 1, randArr, eleA)
+    }
+
     return (
         <div>
             {displayACard}

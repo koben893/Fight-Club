@@ -1,4 +1,5 @@
 import React from 'react'
+import TeamCard from './TeamCard';
 
 function OpponentGen({opponents, randomOpponents}) {
     const {name, id, tier, image, abilities} = opponents;
@@ -10,9 +11,10 @@ function OpponentGen({opponents, randomOpponents}) {
         )
         
 console.log(filterOpponents)
+const renderList = filterOpponents.map(coder=> <TeamCard key={coder.id} id={coder.id} name={coder.name} sprite={coder.sprite}/>)
     return (
     <div className='preview-card'>
-        {/* <h5>{filterOpponents}</h5> */}
+        {renderList}
     </div>
     )
 }

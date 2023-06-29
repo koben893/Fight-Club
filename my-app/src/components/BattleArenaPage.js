@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import FighterDisplay from './FighterDisplay';
+import TeamCard from './TeamCard';
 
 const opponent = {
   "id": 6,
@@ -50,7 +51,7 @@ function BattleArenaPage({ activeUser, opponents }) {
     if (pNo === 2) setUHealth(c => c - tier)
   }
 
-  const isTeamDisplayed = (team.length === 0) ? <div></div> : team.map(fighter => <span key={fighter}>{fighter.name + " "}</span>)
+  const isTeamDisplayed = (team.length === 0) ? <div></div> : team.map(coder => <TeamCard key={coder.id} id={coder.id} name={coder.name} sprite={coder.sprite}/>)
   const isArenaDisplayed = !uFighter.name ? <h4>Waiting For User & Opponent</h4> :
     <section>
       <h3>{uHealth}</h3>
