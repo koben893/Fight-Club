@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TeamCard({id, name, sprite, handleSelect}) {
+function TeamCard({id, name, sprite, handleSelect=()=>{}}) {
     const displaySprite = {
         backgroundImage: `url(${sprite})`,
         animation: 'standingStill 3s infinite',
