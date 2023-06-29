@@ -1,3 +1,7 @@
+.App {
+  text-align: center;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -26,4 +30,79 @@ code {
 .preview-card {
   width: 500px;
   margin-left: 33%;
+}
+
+.choose-fighter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  /* background-color: chocolate; */
+}
+
+.fighter-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  padding-bottom: 50px;
+  /* background-color: blue; */
+}
+
+.fighters {
+  display: flex;
+  max-width: 75px;
+  padding: 5px;
+}
+
+.selected-fighters {
+  display: flex;
+  max-width: 75px;
+  padding: 5px;
+  opacity: .5;
+}
+
+.fighter-info {
+  display: flex;
+  width: 475px;
+  /* background-color: blueviolet; */
+}
+
+.fighter-details {
+  width: 325px;
+  /* background-color: brown; */
+}
+
+.team-container {
+  width: 325px;
+  /* background-color: green; */
+}
+
+.team-list-container {
+  display: flex;
+  justify-content: center;
+  /* background-color: deeppink; */
+}
+
+.battle-team-page {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  /* background-color: orange; */
+}
+
+.fighter-info-sprite {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 100px; */
+  /* background-color: aquamarine; */
+}
+
+.fighter-info-image {
+  width: 150px;
+  padding-bottom: 25px;
 }

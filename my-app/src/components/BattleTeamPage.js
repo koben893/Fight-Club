@@ -35,8 +35,10 @@ const updatedTeam = teamList.filter(coder => coder.id !== displayedCoder.id)
   return (
     <div>
       {showUser}
-      <TeamContainer activeUser={activeUser} teamList={teamList} handleSelect={handleSelect} handleTeamUpdate={handleTeamUpdate}/>
-      <FighterInfo displayedCoder={displayedCoder} teamList={teamList} addTeamMember={addTeamMember} removeTeamMember={removeTeamMember}/>
+      <div className='battle-team-page'>
+        <FighterInfo displayedCoder={displayedCoder} teamList={teamList} addTeamMember={addTeamMember} removeTeamMember={removeTeamMember}/>
+        <TeamContainer activeUser={activeUser} teamList={teamList} handleSelect={handleSelect} handleTeamUpdate={handleTeamUpdate}/>
+      </div>
       <FighterContainer cohort={cohort} handleSelect={handleSelect}/>
     </div>
   )
