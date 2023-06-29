@@ -1,12 +1,9 @@
 import React from 'react'
 import MonsterCard from './MonsterCard'
-import TeamCard from './TeamCard'
 
 // component to create list of coders at the bottom
 
 function FighterContainer({ cohort, handleSelect, teamList, displayedCoder}) {
-
-
 
     const renderedCoders = cohort.map(coder =>
         <MonsterCard

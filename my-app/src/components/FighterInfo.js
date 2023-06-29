@@ -16,11 +16,11 @@ function FighterInfo({displayedCoder, teamList, addTeamMember, removeTeamMember}
 
     const moveset = displayedCoder.abilities.map(moves => {
         return (
-          <ul key={displayedCoder.id}>
-            <p>{moves.firstattack}</p>
-            <p>{moves.secondattack}</p>
-            <p>{moves.thirdattack}</p>
-          </ul>
+          <div key={displayedCoder.id}>
+            <p className='abilities-list'>{moves.firstattack}</p>
+            <p className='abilities-list'>{moves.secondattack}</p>
+            <p className='abilities-list'>{moves.thirdattack}</p>
+          </div>
         )
     })
 
@@ -39,17 +39,17 @@ function FighterInfo({displayedCoder, teamList, addTeamMember, removeTeamMember}
     <div className='fighter-info'>
         <div className='fighter-details'>
             <div>
-                <h2>{displayedCoder.name}</h2>
-                <ul>
+                <h2 className='fighter-name'>{displayedCoder.name}</h2>
+                <div className='abilities'>
                     <h4>Abilities</h4>
                     {moveset}
-                </ul>
+                </div>
                 <h5>Tier: {displayedCoder.tier}</h5>
             </div>
-            <div>{onTeam ?
-            <button onClick={removeTeamMember}>Remove</button>
-            :
-            <button onClick={addTeamMember}>Add</button>}
+            <div className='button-container'>{onTeam ?
+                <button className="remove-team-button" onClick={removeTeamMember}>Remove</button>
+                :
+                <button className="add-team-button" onClick={addTeamMember}>Add</button>}
             </div>
         </div>
         <div className='fighter-info-sprite'>

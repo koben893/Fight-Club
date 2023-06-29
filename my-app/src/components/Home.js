@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 function Home({ cohort, activeUser, opponents }) {
     const [randomOpponent, setRandomOpponent] = useState([])
+    // const [randomNum, setRandomNum] = useState(1)
 
     const displayACard = activeUser.name ? <TeamPreviewCard player={activeUser}/> : <p>No Player Selected</p>
     let playerTwo = {name: 'CPU', teamName : 'CodeBosses', fighterList : cohort.slice(10, 13) }
@@ -14,8 +15,14 @@ function Home({ cohort, activeUser, opponents }) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
     
+    function randomNumberInRange(min, max) {
+        //get number between min (inclusive) and max (inclusive)
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    
     const handleClick = () => {
         setRandomOpponent([]);
+
         const randomNum = recurRandArr();
         setRandomOpponent(randomNum)
     };

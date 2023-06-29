@@ -12,12 +12,12 @@ function TeamContainer({teamList, handleSelect, handleTeamUpdate, activeUser}) {
           handleSelect={handleSelect}
         /> 
     ) 
-        const renderHeader = activeUser.name ? "Change Your Team Below" : "Choose Your Team Below"
+        const renderHeader = activeUser.name ? "Edit Your Team" : "Create Your Team"
     return (
         <div className="team-container">
-            <h2>{renderHeader}</h2>
-            {renderedTeams}
-            <button onClick={() => handleTeamUpdate(teamList)} disabled={!activeUser.name}>Confirm Changes to Your Team</button>
+            <h2 className="yellow-header">{renderHeader}</h2>
+            <div className="team-list">{renderedTeams}</div>
+            <button className="team-button" onClick={() => handleTeamUpdate(teamList)} disabled={!activeUser.name}>Don't Forget to Sign Up!</button>
         </div>
     )
 }
