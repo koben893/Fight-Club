@@ -59,7 +59,7 @@ function FighterInfo({displayedCoder, teamList, addTeamMember, removeTeamMember}
         </div>
     </div>
 
-    const display = displayedCoder.name ? fighterInfo : <h1>Fighter Info</h1>
+    const display = displayedCoder.name ? fighterInfo : <div></div>
 
     return (
         <div>
