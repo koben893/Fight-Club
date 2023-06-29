@@ -27,10 +27,7 @@ const updatedTeam = teamList.filter(coder => coder.id !== displayedCoder.id)
     setTeamList(updatedTeam)
 }
 
-  const showUser = activeUser.name ?
-    <h1>{activeUser.teamName}</h1>
-    :
-    <CreateUser handleUpdateActUser={handleUpdateActUser} teamList={teamList}/>
+  const showUser = activeUser.name ? <h1>{activeUser.teamName}</h1> : <CreateUser handleUpdateActUser={handleUpdateActUser} teamList={teamList}/>
     
   return (
     <div>
