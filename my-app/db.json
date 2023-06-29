@@ -406,24 +406,142 @@
   ],
   "Users": [
     {
-      "id": 1,
-      "name": "Person 1",
-      "teamName": "Team 1",
+      "name": "Tsizzle",
+      "teamName": "Ballyhooes",
       "fighterList": [
         {
-          "id": 31,
-          "name": "Yu me? No yu",
-          "tier": 2,
+          "id": 9,
+          "name": "Jonathan Grabeverything",
+          "tier": 1,
           "image": "",
           "abilities": [
             {
               "firstattack": "fetch: DELETE",
+              "secondattack": "useEffect Hook",
+              "thirdattack": "arrow function"
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "name": "Syed Hamalot must be pair",
+          "tier": 1,
+          "image": "",
+          "abilities": [
+            {
+              "firstattack": "destructuring props",
+              "secondattack": "Redirect Component",
+              "thirdattack": "arrow function"
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "name": "Sean Steamyns",
+          "tier": 1,
+          "image": "",
+          "abilities": [
+            {
+              "firstattack": "useEffect Hook",
               "secondattack": "destructuring props",
+              "thirdattack": "fetch: DELETE"
+            }
+          ]
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "NolanR",
+      "teamName": "SickCoders",
+      "fighterList": [
+        {
+          "id": 5,
+          "name": "Erica Belter",
+          "tier": 1,
+          "image": "",
+          "abilities": [
+            {
+              "firstattack": "destructuring props",
+              "secondattack": "Redirect Component",
+              "thirdattack": "useEffect Hook"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Alexis Bougie",
+          "tier": 1,
+          "image": "",
+          "abilities": [
+            {
+              "firstattack": "destructuring props",
+              "secondattack": "useEffect Hook",
+              "thirdattack": "Redirect Component"
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "name": "Marc Kittycat",
+          "tier": 1,
+          "image": "",
+          "abilities": [
+            {
+              "firstattack": "useEffect Hook",
+              "secondattack": "fetch: DELETE",
               "thirdattack": "arrow function"
             }
           ]
         }
-      ]
+      ],
+      "id": 2
+    },
+    {
+      "name": "OB",
+      "teamName": "AdamFans",
+      "fighterList": [
+        {
+          "id": 14,
+          "name": "Priyam Yaaas",
+          "tier": 1,
+          "image": "",
+          "abilities": [
+            {
+              "firstattack": "destructuring props",
+              "secondattack": "fetch: DELETE",
+              "thirdattack": "useEffect Hook"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "name": "Adam Meow",
+          "tier": 3,
+          "image": "",
+          "abilities": [
+            {
+              "firstattack": "fetch: DELETE",
+              "secondattack": "useEffect Hook",
+              "thirdattack": "destructuring props"
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "name": "Adam 2.0 aka better Adam",
+          "tier": 1,
+          "image": "",
+          "abilities": [
+            {
+              "firstattack": "useEffect Hook",
+              "secondattack": "Redirect Component",
+              "thirdattack": "arrow function"
+            }
+          ]
+        }
+      ],
+      "id": 3
     }
   ]
 }

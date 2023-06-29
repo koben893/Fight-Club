@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import MonsterCard from './MonsterCard'
 
 // component to create list of coders at the bottom

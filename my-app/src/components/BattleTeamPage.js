@@ -1,11 +1,10 @@
-import React, {useState, useEffect} from 'react'
-import MonsterContainer from './MonsterContainer'
+import React, {useState} from 'react'
 import CreateUser from './CreateUser'
 import FighterContainer from './FighterContainer'
 import TeamContainer from './TeamContainer'
 import FighterInfo from './FighterInfo'
 
-function BattleTeamPage({cohort, activeUser, teamList, setTeamList}) {
+function BattleTeamPage({cohort, activeUser, teamList, setTeamList, handleUpdateActUser, handleTeamSubmission}) {
   const [displayedCoder, setDisplayedCoder] = useState({id:'', name:'', abilities:[]})
 
   const handleSelect = (id) => {
@@ -16,12 +15,13 @@ function BattleTeamPage({cohort, activeUser, teamList, setTeamList}) {
   const teamInfo = activeUser.name ?
     <h1>{activeUser.teamName}</h1>
     :
-    <CreateUser cohort={cohort}/>
+    <CreateUser handleUpdateActUser={handleUpdateActUser} teamList={teamList}/>
     
   return (
     <div>
       {teamInfo}
       <TeamContainer teamList={teamList} handleSelect={handleSelect}/>
+      <button onClick={handleTeamSubmission}>Confirm Changes to Your Team</button>
       <FighterInfo displayedCoder={displayedCoder} teamList={teamList} setTeamList={setTeamList}/>
       <FighterContainer cohort={cohort} handleSelect={handleSelect}/>
     </div>
