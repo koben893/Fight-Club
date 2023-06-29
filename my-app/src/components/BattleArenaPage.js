@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import FighterDisplay from './FighterDisplay';
 
 const opponent = {
@@ -16,39 +16,58 @@ const opponent = {
   ]
 }
 
-function BattleArenaPage({activeUser, opponents}) {
+function BattleArenaPage({ activeUser, opponents }) {
   const [team, setTeam] = useState([]);
   const [uFighter, setUFighter] = useState({});
   const [uHealth, setUHealth] = useState(10);
   const [opHealth, setOpHealth] = useState(10);
-  useEffect(()=>{
+  useEffect(() => {
     if (activeUser.fighterList) {
-     setTeam(activeUser.fighterList)
-     setUFighter(activeUser.fighterList[0])
+      setTeam(activeUser.fighterList)
+      setUFighter(activeUser.fighterList[0])
     }
     else {
       setTeam([])
       setUFighter({})
     }
-  },[activeUser])
-  
+    if (!activeUser.fighterList) {
+      setUHealth(10);
+      setOpHealth(10);
+    }
+  }, [activeUser])
 
-console.log(uHealth, opHealth);
-  const renderActiveFighter = (!activeUser.name) ? <div></div>: <FighterDisplay fighter={uFighter} />
-  const renderActiveOpponent = <FighterDisplay fighter={opponent} />
-  //const renderUserTeam = (!activeUser.name) ? <div></div>: team.map(fighter => <BenchFighterDisplay fighter={fighter}/>)
+  useEffect(() => {
+    if (uHealth < 1 || opHealth < 1) {
+      alert('Match Over');
+      setUHealth(10);
+      setOpHealth(10);
+    }
+  }, [uHealth, opHealth])
+
+  const handleFight = (pNo, tier) => {
+    if (pNo === 1) setOpHealth(c => c - tier)
+
+    if (pNo === 2) setUHealth(c => c - tier)
+  }
+
+  const isTeamDisplayed = (team.length === 0) ? <div></div> : team.map(fighter => <span key={fighter}>{fighter.name + " "}</span>)
+  const isArenaDisplayed = !uFighter.name ? <h4>Waiting For User & Opponent</h4> :
+    <section>
+      <h3>{uHealth}</h3>
+      <FighterDisplay fighter={uFighter} handleFight={handleFight} pNo={1} />
+      {isTeamDisplayed}
+      <span>Vs</span>
+      <h3>{opHealth}</h3>
+      <FighterDisplay fighter={opponent} handleFight={handleFight} pNo={2} />
+      {/* fighter List of Opponent */}
+    </section>
+
+
+
   return (
     <div>
-      {/* <div>
-        <BattleText />
-      </div> */}
-      <button onClick={()=>{setOpHealth(c=>c-uFighter.tier)}}>User Attack</button>
-      {renderActiveFighter}
-      <span>Vs</span>
-      <button onClick={()=>{setUHealth(c=>c-opponent.tier)}}>Opponent Attack</button>
-      {renderActiveOpponent}
-      {/* {renderUserTeam} */}
-      </div>
+      {isArenaDisplayed}
+    </div>
   )
 }
 

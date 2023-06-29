@@ -1,19 +1,22 @@
 import React from 'react'
 
-function FighterDisplay({ fighter }) {
+function FighterDisplay({ fighter, handleFight, pNo}) {
 
-    const { name, sprite, tier } = fighter;
-    const displaySprite = {
-        backgroundImage: `url(${sprite})`,
-        animation: 'standingStill 3s infinite',
-    }
+     const { name, sprite, tier, abilities} = fighter;
+    // const displaySprite = {
+    //     backgroundImage: `url(${sprite})`,
+    //     animation: 'standingStill 3s infinite',
+    // }
 
     return (
-        <div className='team-list-container'>
-            <h4>{name}</h4>
-            <span>hp</span><span>{tier * 30}</span><span>atk</span><span>{tier * 5}</span>
-            <div style={displaySprite} className='team-sprite'></div>
-        </div>
+        <section>
+       <h4>{name}</h4>
+        <button onClick={() => handleFight(pNo,tier)}>{abilities[0].firstattack}</button>
+        <button onClick={() => handleFight(pNo,tier)}>{abilities[0].secondattack}</button>
+        <button onClick={() => handleFight(pNo,tier)}>{abilities[0].thirdattack}</button>
+        {/* <div style={displaySprite} className='team-sprite'></div> */}
+      </section>
+        
     )
 }
 
