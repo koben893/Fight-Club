@@ -444,7 +444,8 @@
           "id": 9,
           "name": "Jonathan Grabeverything",
           "tier": 1,
-          "image": "",
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/SCWgUQJ.png",
           "abilities": [
             {
               "firstattack": "fetch: DELETE",
@@ -457,7 +458,8 @@
           "id": 20,
           "name": "Syed Hamalot must be pair",
           "tier": 1,
-          "image": "",
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/SCWgUQJ.png",
           "abilities": [
             {
               "firstattack": "destructuring props",
@@ -470,7 +472,8 @@
           "id": 16,
           "name": "Sean Steamyns",
           "tier": 1,
-          "image": "",
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/SCWgUQJ.png",
           "abilities": [
             {
               "firstattack": "useEffect Hook",
@@ -490,7 +493,8 @@
           "id": 5,
           "name": "Erica Belter",
           "tier": 1,
-          "image": "",
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/SCWgUQJ.png",
           "abilities": [
             {
               "firstattack": "destructuring props",
@@ -503,7 +507,8 @@
           "id": 3,
           "name": "Alexis Bougie",
           "tier": 1,
-          "image": "",
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/SCWgUQJ.png",
           "abilities": [
             {
               "firstattack": "destructuring props",
@@ -516,7 +521,8 @@
           "id": 11,
           "name": "Marc Kittycat",
           "tier": 1,
-          "image": "",
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/SCWgUQJ.png",
           "abilities": [
             {
               "firstattack": "useEffect Hook",
@@ -536,7 +542,8 @@
           "id": 14,
           "name": "Priyam Yaaas",
           "tier": 1,
-          "image": "",
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/SCWgUQJ.png",
           "abilities": [
             {
               "firstattack": "destructuring props",
@@ -549,7 +556,8 @@
           "id": 1,
           "name": "Adam Meow",
           "tier": 3,
-          "image": "",
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/SCWgUQJ.png",
           "abilities": [
             {
               "firstattack": "fetch: DELETE",
@@ -562,7 +570,8 @@
           "id": 25,
           "name": "Adam 2.0 aka better Adam",
           "tier": 1,
-          "image": "",
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/SCWgUQJ.png",
           "abilities": [
             {
               "firstattack": "useEffect Hook",
