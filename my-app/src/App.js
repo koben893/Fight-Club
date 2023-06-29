@@ -12,15 +12,19 @@ function App() {
   const [cohort, setCohort] = useState([])
   const [userList, setUserList] = useState([])
   const [activeUser, setActiveUser] = useState({})
-  const [teamList, setTeamList] = useState([{id:0}]);
 
-  const handleActUser = (activeUser) => setActiveUser(activeUser)
+  const handleLogInUser = (activeUser) => setActiveUser(activeUser)
 
-  useEffect(() => {
-    if (activeUser.fighterList) {
-    setTeamList(activeUser.fighterList)
-    }
-  }, [activeUser])
+  const handleUpdateActUser = (newUser) => {
+    setActiveUser(newUser)
+    setUserList(current=>[...current, newUser])
+ }
+
+  const handleTeamUpdate = (teamList) => {
+    if (teamList.length < 3 || teamList.length > 3) alert('need 3 coders only')
+    else if (activeUser.name) setActiveUser(current => ({ ...current, fighterList: teamList }))
+    else alert('no one is signed in')
+  }
 
   useEffect(() => {
     fetch("http://localhost:3000/fighters")
@@ -37,11 +41,12 @@ function App() {
   return (
     <div className="App">
       <h1>Title of Our App</h1>
-      <Login userList={userList} handleActUser={handleActUser} activeUser={activeUser}/>
+      <Login userList={userList} handleLogInUser={handleLogInUser} activeUser={activeUser} />
       <Navbar />
       <Switch>
         <Route path="/teamPage">
-          <BattleTeamPage cohort={cohort} activeUser={activeUser} teamList={teamList} setTeamList={setTeamList}/>
+          <BattleTeamPage
+            cohort={cohort} activeUser={activeUser} handleUpdateActUser={handleUpdateActUser} handleTeamUpdate={handleTeamUpdate} />
         </Route>
         <Route path="/arena">
           <BattleArenaPage />
@@ -50,7 +55,7 @@ function App() {
           <TrophiesPage />
         </Route>
         <Route exact path="/">
-          <Home userList={userList} cohort={cohort} activeUser={activeUser} handleActUser={handleActUser}/>
+          <Home cohort={cohort} activeUser={activeUser} />
         </Route>
       </Switch>
     </div>

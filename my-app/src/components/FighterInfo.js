@@ -1,16 +1,7 @@
 import React, {useState, useEffect} from 'react'
 
-function FighterInfo({displayedCoder, teamList, setTeamList}) {
+function FighterInfo({displayedCoder, teamList, addTeamMember, removeTeamMember}) {
     const [onTeam, setOnTeam] = useState()
-
-    const addTeamMember = () => {
-        setTeamList((currentTeamList) => [...currentTeamList, displayedCoder])
-      }
-    
-    const removeTeamMember = () => {
-    const updatedTeam = teamList.filter(coder => coder.id !== displayedCoder.id)
-        setTeamList(updatedTeam)
-    }
 
     useEffect(() => {
         const copy = [...teamList];
@@ -68,7 +59,7 @@ function FighterInfo({displayedCoder, teamList, setTeamList}) {
         </div>
     </div>
 
-    const display = displayedCoder ? fighterInfo : <div>Fighter Name: </div>
+    const display = displayedCoder.name ? fighterInfo : <h1>Fighter Info</h1>
 
     return (
         <div>

@@ -19,7 +19,7 @@ function FighterContainer({ cohort, handleSelect }) {
 
     return (
         <div className="choose-fighter">
-            <h2>Choose Your Team</h2>
+            <h2>Select Your Coders</h2>
             <div className='fighter-container'>
                 {renderedCoders}
             </div>
