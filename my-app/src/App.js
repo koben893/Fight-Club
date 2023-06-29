@@ -6,6 +6,7 @@ import BattleTeamPage from './components/BattleTeamPage';
 import TrophiesPage from './components/TrophiesPage';
 import Navbar from './components/Navbar';
 import Login from './components/Login';
+import { act } from 'react-dom/test-utils';
 
 function App() {
   const [cohort, setCohort] = useState([])
@@ -17,7 +18,7 @@ function App() {
   const handleUpdateActUser = (newUser) => {
     setActiveUser(newUser)
     setUserList(current=>[...current, newUser])
- }
+  }
 
   const handleTeamUpdate = (teamList) => {
     if (teamList.length < 3 || teamList.length > 3) alert('need 3 coders only')
@@ -54,7 +55,7 @@ function App() {
             cohort={cohort} activeUser={activeUser} handleUpdateActUser={handleUpdateActUser} handleTeamUpdate={handleTeamUpdate} />
         </Route>
         <Route path="/arena">
-          <BattleArenaPage />
+          <BattleArenaPage activeUser={activeUser} opponents={opponents}/>
         </Route>
         <Route path="/trophies">
           <TrophiesPage />
