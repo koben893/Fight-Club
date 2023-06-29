@@ -28,7 +28,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    fetch("http://localhost:3000/users")
+    fetch("http://localhost:3000/fighters")
       .then(r => r.json())
       .then(opponents => setOpponents(opponents))
   }, [])

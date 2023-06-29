@@ -34,7 +34,7 @@ function Home({ cohort, userList, activeUser, handleActUser, opponents }) {
             {displayACard}
             <span>VS</span>
             <TeamPreviewCard player={playerTwo}/>
-            <OpponentGen opponent={opponents} randomOpponent={randomOpponent}/>
+            <OpponentGen opponents={opponents} randomOpponents={randomOpponent}/>
             <h2>Opposing Team is: {randomOpponent}</h2>
             <button onClick={handleClick}>Generate Opponents</button>
         </div>
