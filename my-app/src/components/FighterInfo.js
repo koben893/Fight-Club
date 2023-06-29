@@ -33,28 +33,47 @@ function FighterInfo({displayedCoder, teamList, setTeamList}) {
         )
     })
 
+    const partTheSeasSprite = {
+        backgroundImage: `url(${displayedCoder.sprite})`,
+        animation: 'partTheSeas 3s steps(4) infinite',
+    }
+
+    // const partTheSeasBehind = {
+    //     backgroundImage: `url(${displayedCoder.sprite})`,
+    //     animation: 'partTheSeasBehind 3s steps(4) infinite',
+    // }
+    
+
     const fighterInfo =  
-    <div>
-        <h1>Fighter Info</h1>
-        <div>
-            <h3>{displayedCoder.name}</h3>
-            <ul>
-                <h5>Abilities</h5>
-                {moveset}
-            </ul>
-            <h5>Tier: {displayedCoder.tier}</h5>
+    <div className='fighter-info'>
+        <div className='fighter-details'>
+            <div>
+                <h2>{displayedCoder.name}</h2>
+                <ul>
+                    <h4>Abilities</h4>
+                    {moveset}
+                </ul>
+                <h5>Tier: {displayedCoder.tier}</h5>
+            </div>
+            <div>{onTeam ?
+            <button onClick={removeTeamMember}>Remove</button>
+            :
+            <button onClick={addTeamMember}>Add</button>}
+            </div>
         </div>
-        <div>{onTeam ?
-        <button onClick={removeTeamMember}>Remove</button>
-        :
-        <button onClick={addTeamMember}>Add</button>}
+        <div className='fighter-info-sprite'>
+            <div style={partTheSeasSprite} className='sprite'></div>
+            {/* <div style={partTheSeasBehind} className='sprite'></div> */}
+            <img className='fighter-info-image' src={displayedCoder.image} alt={displayedCoder.name}/>
         </div>
     </div>
 
     const display = displayedCoder ? fighterInfo : <div>Fighter Name: </div>
 
     return (
-        <div>{display}</div>
+        <div>
+            {display}
+        </div>
     )
 }
 

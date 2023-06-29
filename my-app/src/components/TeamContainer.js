@@ -1,21 +1,22 @@
-import MonsterCard from "./MonsterCard";
+// import MonsterCard from "./MonsterCard";
+import TeamCard from "./TeamCard";
 
 // component to display team info
 
-function TeamContainer({teamName, teamList, handleSelect}) {
+function TeamContainer({teamList, handleSelect}) {
 
     const renderedTeams = teamList.map(coder => 
-        <MonsterCard
+        <TeamCard
           key={coder.id}
           id={coder.id}
           name={coder.name}
-          image={coder.image}
+          sprite={coder.sprite}
           handleSelect={handleSelect}
         />
     )
     return (
-        <div>
-            <h3>Team Members</h3>
+        <div className="team-container">
+            <h2>Team Members</h2>
             {renderedTeams}
         </div>
     )

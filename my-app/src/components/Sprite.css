@@ -1,0 +1,42 @@
+.team-sprite {
+    width: 58px;
+    height: 55px;
+    background-repeat: no-repeat;
+}
+
+.sprite {
+    width: 56px;
+    height: 52px;
+    background-repeat: repeat-x;
+    /* animation: partTheSeas 3s steps(4) infinite;
+    animation: newAnimation 3s steps(4) infinite; */
+    padding: 1px;
+    transform: scale(3);
+}
+
+@keyframes partTheSeas {
+    from {
+        background-position: -3px -137px;
+    }
+    to {
+        background-position: -515px -137px;
+    }
+}
+
+@keyframes partTheSeasBehind {
+    from {
+        background-position: 0px -10px;
+    }
+    to {
+        background-position: -512px -10px;
+    }
+}
+
+@keyframes standingStill {
+    from {
+        background-position: 0px -72px;
+    }
+    to {
+        background-position: 0px -72px;
+    }
+}

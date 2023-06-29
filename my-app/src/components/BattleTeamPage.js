@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import MonsterContainer from './MonsterContainer'
 import CreateUser from './CreateUser'
 import FighterContainer from './FighterContainer'
 import TeamContainer from './TeamContainer'
@@ -21,8 +20,10 @@ function BattleTeamPage({cohort, activeUser, teamList, setTeamList}) {
   return (
     <div>
       {teamInfo}
-      <TeamContainer teamList={teamList} handleSelect={handleSelect}/>
-      <FighterInfo displayedCoder={displayedCoder} teamList={teamList} setTeamList={setTeamList}/>
+      <div className='battle-team-page'>
+        <FighterInfo displayedCoder={displayedCoder} teamList={teamList} setTeamList={setTeamList}/>
+        <TeamContainer teamList={teamList} handleSelect={handleSelect}/>
+      </div>
       <FighterContainer cohort={cohort} handleSelect={handleSelect}/>
     </div>
   )
