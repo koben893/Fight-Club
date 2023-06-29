@@ -1,14 +1,11 @@
 import { useState } from "react"
 
-function Login({ userList, handleLogInUser, activeUser, setTeamList}) {
+function Login({ userList, handleLogInUser, activeUser}) {
     const [userLogIn, setUserLogIn] = useState('');
 
     const checkUser = () => {
         const userFound = userList.find(user=>(user.name === userLogIn))
-        if(activeUser.name){
-            handleLogInUser({});
-            //setTeamList([{id:0}]);
-        }
+        if(activeUser.name) handleLogInUser({});
         else if (userFound) {
             handleLogInUser(userFound);
             setUserLogIn('');

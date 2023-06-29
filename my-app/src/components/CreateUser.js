@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 
-//contains a userForm for creating userName TeamName also want to render monsterContainer to select Fighter List
 const empty = { name: '', teamName: '', fighterList: [] }
 
 function CreateUser({handleUpdateActUser, teamList}) {
@@ -10,8 +9,8 @@ function CreateUser({handleUpdateActUser, teamList}) {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    if (teamList.length < 3) alert('need More Coders')
-    else if (teamInfo.name === '' || teamInfo.teamName === '') alert("need a name and team name")
+    if (teamInfo.name === '' || teamInfo.teamName === '') alert("need a name and team name")
+    else if (teamList.length < 3) alert('need 3 Coders')
     else {
       const utdUser = {...teamInfo};
       const utdTL = [...teamList];

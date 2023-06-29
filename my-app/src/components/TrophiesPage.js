@@ -15,7 +15,6 @@ function TrophiesPage() {
   const [trophyState, setTrophyState] = useState(allTrophies);
   const displayMyTrophies = [];
 
-  //handles whether trophy is active and should be displayed
   function handleTrophyState (tnum){
     const a = trophyState[tnum];
     setTrophyState( cur => ({...cur, [tnum] : {...a, state : !a.state}}))
@@ -36,7 +35,7 @@ function TrophiesPage() {
   return (
     <div>
       {displayMyTrophies}
-      <button onClick={handleClick}>click Me</button>
+      <button onClick={handleClick}>Show All Trophies</button>
     </div>
   )
 }
