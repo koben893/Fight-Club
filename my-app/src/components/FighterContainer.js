@@ -4,7 +4,9 @@ import TeamCard from './TeamCard'
 
 // component to create list of coders at the bottom
 
-function FighterContainer({ cohort, handleSelect }) {
+function FighterContainer({ cohort, handleSelect, teamList, displayedCoder}) {
+
+
 
     const renderedCoders = cohort.map(coder =>
         <MonsterCard
@@ -14,6 +16,8 @@ function FighterContainer({ cohort, handleSelect }) {
             image={coder.image}
             tier={coder.tier}
             handleSelect={handleSelect}
+            teamList={teamList}
+            displayedCoder={displayedCoder}
         />
     )
 

@@ -582,6 +582,55 @@
         }
       ],
       "id": 3
+    },
+    {
+      "name": "Adam",
+      "teamName": "CatsWow",
+      "fighterList": [
+        {
+          "id": 5,
+          "name": "Erica Belter",
+          "tier": 1,
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/SCWgUQJ.png",
+          "abilities": [
+            {
+              "firstattack": "destructuring props",
+              "secondattack": "Redirect Component",
+              "thirdattack": "useEffect Hook"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Francesco Weeee",
+          "tier": 1,
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/SCWgUQJ.png",
+          "abilities": [
+            {
+              "firstattack": "fetch: DELETE",
+              "secondattack": "destructuring props",
+              "thirdattack": "useEffect Hook"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Jeffery Arbitrary",
+          "tier": 1,
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/SCWgUQJ.png",
+          "abilities": [
+            {
+              "firstattack": "redirect component",
+              "secondattack": "arrow function",
+              "thirdattack": "destructuring props"
+            }
+          ]
+        }
+      ],
+      "id": 4
     }
   ]
 }
