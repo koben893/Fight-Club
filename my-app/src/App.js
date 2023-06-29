@@ -7,6 +7,7 @@ import BattleTeamPage from './components/BattleTeamPage';
 import TrophiesPage from './components/TrophiesPage';
 import Navbar from './components/Navbar';
 import Login from './components/Login';
+import { act } from 'react-dom/test-utils';
 
 function App() {
   const [cohort, setCohort] = useState([])
@@ -55,7 +56,7 @@ function App() {
             cohort={cohort} activeUser={activeUser} handleUpdateActUser={handleUpdateActUser} handleTeamUpdate={handleTeamUpdate} />
         </Route>
         <Route path="/arena">
-          <BattleArenaPage />
+          <BattleArenaPage activeUser={activeUser} opponents={opponents}/>
         </Route>
         <Route path="/trophies">
           <TrophiesPage />

@@ -4,7 +4,7 @@ import OpponentGen from './OpponentGen';
 import { useState } from 'react';
 
 function Home({ cohort, activeUser, opponents }) {
-    let randomOpponent = []
+    const [randomOpponent, setRandomOpponent] = useState([])
 
     const displayACard = activeUser.name ? <TeamPreviewCard player={activeUser}/> : <p>No Player Selected</p>
     let playerTwo = {name: 'CPU', teamName : 'CodeBosses', fighterList : cohort.slice(10, 13) }
@@ -15,12 +15,12 @@ function Home({ cohort, activeUser, opponents }) {
     }
     
     const handleClick = () => {
-        randomOpponent = []
+        setRandomOpponent([]);
         for( var i = 0; i < 3; i++){
             let randomNum = randomNumberInRange(1, 31);
             if(randomNum !== randomOpponent)
             {
-                randomOpponent.push(randomNum)
+                setRandomOpponent(cur=>[...cur, randomNum])
             }
         }
         console.log(randomOpponent)
@@ -29,9 +29,10 @@ function Home({ cohort, activeUser, opponents }) {
         <div>
             {displayACard}
             <span>VS</span>
-            <TeamPreviewCard player={playerTwo}/>
-            <OpponentGen opponents={opponents} randomOpponents={randomOpponent}/>
+            {/* <TeamPreviewCard player={playerTwo}/> */}
             <h2>Opposing Team is: {randomOpponent}</h2>
+            <OpponentGen opponents={opponents} randomOpponents={randomOpponent}/>
+            
             <button onClick={handleClick}>Generate Opponents</button>
         </div>
     )

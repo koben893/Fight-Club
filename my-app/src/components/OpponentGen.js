@@ -3,18 +3,16 @@ import React from 'react'
 function OpponentGen({opponents, randomOpponents}) {
     const {name, id, tier, image, abilities} = opponents;
 
-    //const renderOpponents = fighterList.map(coder=>
     const filterOpponents = opponents.filter(opponents => 
-    randomOpponent === opponents.id)
+    {
+        return (randomOpponents[0] === opponents.id || randomOpponents[1] === opponents.id || randomOpponents[2] === opponents.id)
+    }
+        )
         
-
-
-    console.log("hello" ,{filterOpponents})
-    console.log(opponents)
-    console.log("random" + randomOpponents)
+console.log(filterOpponents)
     return (
     <div className='preview-card'>
-        <h5>{filterOpponents}</h5>
+        {/* <h5>{filterOpponents}</h5> */}
     </div>
     )
 }
