@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Route, Switch } from "react-router-dom";
 import Home from './components/Home'
@@ -61,7 +60,7 @@ function App() {
           <TrophiesPage />
         </Route>
         <Route exact path="/">
-          <Home userList={userList} cohort={cohort} activeUser={activeUser} handleActUser={handleActUser} opponents={opponents}/>
+          <Home cohort={cohort} activeUser={activeUser} opponents={opponents}/>
         </Route>
       </Switch>
     </div>

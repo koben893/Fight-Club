@@ -27,7 +27,7 @@ function MonsterCard({ id, name, image, handleSelect, teamList, displayedCoder }
 
   return (
     <div>
-      <div onClick={handleClick}>
+      <div className='fighter-picture-frame' onClick={handleClick}>
         {selected ? <img src={image} alt={name} className='selected-fighters' /> : <img src={image} alt={name} className='fighters' />}
       </div>
     </div>
