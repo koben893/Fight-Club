@@ -1,10 +1,9 @@
-
 import Login from './Login'
 import TeamPreviewCard from "./TeamPreviewCard";
 import OpponentGen from './OpponentGen';
 import { useState } from 'react';
 
-function Home({ cohort, userList, activeUser, handleActUser, opponents }) {
+function Home({ cohort, activeUser, opponents }) {
     let randomOpponent = []
 
     const displayACard = activeUser.name ? <TeamPreviewCard player={activeUser}/> : <p>No Player Selected</p>
@@ -26,11 +25,6 @@ function Home({ cohort, userList, activeUser, handleActUser, opponents }) {
         }
         console.log(randomOpponent)
     };
-
-
-
-function Home({ cohort, activeUser}) {
-
     return (
         <div>
             {displayACard}
@@ -40,9 +34,7 @@ function Home({ cohort, activeUser}) {
             <h2>Opposing Team is: {randomOpponent}</h2>
             <button onClick={handleClick}>Generate Opponents</button>
         </div>
-
     )
-
 }
 
-export default Home;
+export default Home

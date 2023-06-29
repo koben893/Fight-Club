@@ -4,8 +4,11 @@ function OpponentGen({opponents, randomOpponents}) {
     const {name, id, tier, image, abilities} = opponents;
 
     //const renderOpponents = fighterList.map(coder=>
-    const filterOpponents = randomOpponents.filter(randomOpponent => 
+    const filterOpponents = opponents.filter(opponents => 
     randomOpponent === opponents.id)
+        
+
+
     console.log("hello" ,{filterOpponents})
     console.log(opponents)
     console.log("random" + randomOpponents)

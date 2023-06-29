@@ -18,7 +18,7 @@ function App() {
   const handleUpdateActUser = (newUser) => {
     setActiveUser(newUser)
     setUserList(current=>[...current, newUser])
- }
+  }
 
   const handleTeamUpdate = (teamList) => {
     if (teamList.length < 3 || teamList.length > 3) alert('need 3 coders only')
@@ -61,7 +61,7 @@ function App() {
           <TrophiesPage />
         </Route>
         <Route exact path="/">
-          <Home userList={userList} cohort={cohort} activeUser={activeUser} handleActUser={handleActUser} opponents={opponents}/>
+          <Home cohort={cohort} activeUser={activeUser} opponents={opponents}/>
         </Route>
       </Switch>
     </div>
