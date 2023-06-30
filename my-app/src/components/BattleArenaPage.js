@@ -9,12 +9,14 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
   const [oTeam, setOTeam] = useState([]);
   const [uFighter, setUFighter] = useState({});
   const [oFighter, setOFighter] = useState({});
-  const [uHealth, setUHealth] = useState(10);
-  const [opHealth, setOpHealth] = useState(10);
+  const [uHealth, setUHealth] = useState(5);
+  const [opHealth, setOpHealth] = useState(5);
   const [turn, setTurn] = useState(true);
   const [cpuAtk, setCpuAtk] = useState('default');
   const [readAttack, setReadAttack] = useState("")
+  const [round, setRound] = useState(1);
 
+  console.log(round);
   useEffect(() => {
     if (activeUser.fighterList) {
       setTeam([activeUser.fighterList[1], activeUser.fighterList[2]])
@@ -41,23 +43,53 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
   }, [activeUser, opponentTeam])
 
   useEffect(() => {
-    if (uHealth <= 0 || opHealth <= 0) {
-      const timerIDx = setTimeout(() => {
+    const timerIDx = setTimeout(() => {
+      if (round <= 2 && (uHealth <= 0 || opHealth <= 0)) {
         setReadAttack('Match Over');
-      }, 1000)
+        setReadAttack(`Next Round Begin`);
+        setUFighter(activeUser.fighterList[round]);
+        setTeam(c=>c.slice(1));
+        setOFighter(opponentTeam[round]);
+        setOTeam(c=>c.slice(1));
+   
+        setUHealth(5);
+        setOpHealth(5);
+        setRound(c => c + 1);
+      }
 
-      const timerIDy = setTimeout(() => {
-        setReadAttack('Round 2 Begin');
-        setUHealth(10);
-        setOpHealth(10);
-      }, 2000)
+      if(round === 3 && (uHealth <= 0 || opHealth <= 0) ) {
+        alert("game over")
+        setReadAttack(``);
+        setUFighter(activeUser.fighterList[0]);
+        setTeam([activeUser.fighterList[1], activeUser.fighterList[2]]);
+        setOFighter(opponentTeam[0]);
+        setOTeam([opponentTeam[1], opponentTeam[2]]);
+        setRound(1);
+        setTurn(true);
+        setUHealth(5);
+        setOpHealth(5);
+      }
+    }, 1000)
 
-      return function cleanup() {
-        clearTimeout(timerIDx);
-        clearTimeout(timerIDy);
-      };
-    }
-  }, [uHealth, opHealth])
+    return function cleanup() {
+      clearTimeout(timerIDx);
+    };
+  }, [uHealth, opHealth, round, activeUser, opponentTeam])
+
+  // useEffect(() => {
+  //   const timerIDy = setTimeout(() => {
+  //     if (round < 4) {
+  //       setReadAttack(`Round ${round} Begin`);
+  //       setUFighter(activeUser.fighterList[round])
+  //       setOFighter(opponentTeam[round])
+  //     }
+  //   }, 2000)
+
+  //   return function cleanup() {
+  //     clearTimeout(timerIDy);
+  //   };
+
+  // }, [activeUser, opponentTeam, round])
 
 
   const handleFight = (pNo, dmg, atk) => {
