@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './Sprite.css'
 import FighterContainer from './FighterContainer'
 
-// compoonent that renders coders card
+// component that renders coders card
 
 function MonsterCard({ id, name, image, handleSelect, teamList, displayedCoder }) {
   const [selected, setSelected] = useState(false)
