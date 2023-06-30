@@ -4,13 +4,14 @@ import PlayerOneFighterDisplay from './PlayerOneFighterDisplay';
 import TeamCard from './TeamCard';
 import CpuFighterDisplay from './CpuFighterDisplay';
 
+const allHealth = 5;
 function BattleArenaPage({ activeUser, opponentTeam }) {
   const [team, setTeam] = useState([]);
   const [oTeam, setOTeam] = useState([]);
   const [uFighter, setUFighter] = useState({});
   const [oFighter, setOFighter] = useState({});
-  const [uHealth, setUHealth] = useState(5);
-  const [opHealth, setOpHealth] = useState(5);
+  const [uHealth, setUHealth] = useState(allHealth);
+  const [opHealth, setOpHealth] = useState(allHealth);
   const [turn, setTurn] = useState(true);
   const [cpuAtk, setCpuAtk] = useState('default');
   const [readAttack, setReadAttack] = useState("")
@@ -35,8 +36,8 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
     }
 
     if (!activeUser.fighterList) {
-      setUHealth(10);
-      setOpHealth(10);
+      setUHealth(allHealth);
+      setOpHealth(allHealth);
     }
   }, [activeUser, opponentTeam])
 
@@ -47,14 +48,14 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
         setReadAttack('Next Round');
         setTeam(c => c.slice(1));
         setUFighter(team[0]);
-        setUHealth(5);
+        setUHealth(allHealth);
       }
 
       if (oTeam.length > 0 && opHealth <= 0) {
         setReadAttack('Next Round');
         setOTeam(c => c.slice(1));
         setOFighter(oTeam[0]);
-        setOpHealth(5);
+        setOpHealth(allHealth);
         setCpuAtk('default');
       }
 
@@ -67,8 +68,8 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
         setOTeam([opponentTeam[1], opponentTeam[2]]);
         setCpuAtk('default');
         setTurn(true);
-        setUHealth(5);
-        setOpHealth(5);
+        setUHealth(allHealth);
+        setOpHealth(allHealth);
       }
     }, 1000)
 
