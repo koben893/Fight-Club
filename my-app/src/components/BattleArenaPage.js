@@ -44,14 +44,14 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
     const timerIDx = setTimeout(() => {
 
       if (team.length > 0 && uHealth <= 0) {
-        setReadAttack('Match Over');
+        setReadAttack('Next Round');
         setTeam(c => c.slice(1));
         setUFighter(team[0]);
         setUHealth(5);
       }
 
       if (oTeam.length > 0 && opHealth <= 0) {
-        setReadAttack('Match Over');
+        setReadAttack('Next Round');
         setOTeam(c => c.slice(1));
         setOFighter(oTeam[0]);
         setOpHealth(5);
