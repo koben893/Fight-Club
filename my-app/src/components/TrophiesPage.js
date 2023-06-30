@@ -3,7 +3,7 @@ import Trophy from './Trophy';
 import { useState } from 'react';
 
 const allTrophies = {
-  "t1" : { state: false, text: 'You Beat the Game Hooray!', emoji: "a" },
+  "t1" : { state: false, text: 'You Beat the Game Hooray!', emoji: "(\'-'/)" },
   "t2" : { state: false, text: 'You Defeated The Boss, Good Job!', emoji: "x" },
   't3': { state: false, text: 'Slayer of Cats', emoji: "t" },
   't4': { state: false, text: 'Biggest Loser', emoji: "o" },
