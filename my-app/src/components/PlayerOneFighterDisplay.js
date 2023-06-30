@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
 const animateFighter = {
-  "firstattack" : "spellcast 2s steps(4) infinite",
-  "secondattack" : "slash 2s steps(3) infinite",
-  "thirdattack" : 'thrust 2s steps(4) infinite',
+  "firstattack" : "spellcast 2s steps(4)",
+  "secondattack" : "slash 2s steps(3)",
+  "thirdattack" : 'thrust 2s steps(4)',
   "default" :  'standingStill 3s infinite'
 }
 
@@ -20,6 +20,7 @@ function PlayerOneFighterDisplay({ fighter, handleFight, pNo, turn}) {
   const handleClick = (e) => {
     handleFight(pNo, tier, abilities[0][e.target.name])
     setSpriteState(e.target.name)
+    setTimeout(()=>setSpriteState("default"),2000)
   }
 
   return (

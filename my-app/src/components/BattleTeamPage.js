@@ -45,7 +45,7 @@ function BattleTeamPage({ cohort, activeUser, handleUpdateActUser, handleTeamUpd
   return (
     <div>
       <div>
-        <h3>{showUser}</h3>
+        <div>{showUser}</div>
       </div>
       <div className='battle-team-container'>
         <FighterInfo displayedCoder={displayedCoder} teamList={teamList} addTeamMember={addTeamMember} removeTeamMember={removeTeamMember} />
