@@ -8,7 +8,7 @@ const animateFighter = {
 }
 
 function CpuFighterDisplay({ fighter, cpuAtk}) {
-    const { name, sprite} = fighter;
+    const { name, sprite, abilities} = fighter;
     const displaySprite = {
         backgroundImage: `url(${sprite})`,
         animation: `${animateFighter[cpuAtk]}`,
@@ -22,9 +22,9 @@ function CpuFighterDisplay({ fighter, cpuAtk}) {
         <div className='cpu-moves-button-container'>
             <h2 className='teal-header'>{name}</h2>
             <div className='cpu-moves-button-list'>
-                <button className='cpu-moves-button' name="firstattack">First Attack</button>
-                <button className='cpu-moves-button' name="secondattack">Second Attack</button>
-                <button className='cpu-moves-button' name="thirdattack">Third Attack</button>
+                <button className='cpu-moves-button' name="firstattack">{abilities[0].firstattack}</button>
+                <button className='cpu-moves-button' name="secondattack">{abilities[0].secondattack}</button>
+                <button className='cpu-moves-button' name="thirdattack">{abilities[0].thirdattack}</button>
             </div>
         </div>
     </section>
