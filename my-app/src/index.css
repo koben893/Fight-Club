@@ -121,6 +121,7 @@ code {
   color: #00efe1;
   padding: 12px;
   background-color: #030416;
+  cursor: default;
 }
 
 .team-button:disabled:hover {
@@ -254,8 +255,46 @@ code {
 }
 
 .preview-card {
-  width: 500px;
-  margin-left: 33%;
+  padding: 20px;
+  height: 325px;
+  width: 300px;
+  border: 2px solid #0c323e;
+  border-radius: 5px;
+  /* background-color: brown; */
+}
+
+.preview-title {
+  color: #00efe1;
+}
+
+.versus {
+  padding: 20px;
+}
+
+.multi-team-container {
+  display: flex;
+  align-items: center;
+  /* background-color: blueviolet; */
+}
+
+.generate-opponent-button {
+  border: none;
+  border-radius: 3px;
+  width: 400px;
+  font-family: 'Fira Code';
+  font-weight: 700;
+  padding: 12px;
+  color: #030416;
+  background-color: #f9c51a;
+  cursor: pointer;
+}
+
+.generate-button-container {
+  padding: 50px;
+}
+
+.generate-opponent-button:hover {
+  background-color: #00efe1;
 }
 
 .choose-fighter {
@@ -334,6 +373,7 @@ code {
   /* padding-bottom: 0px; */
   max-height: 225px;
   overflow-y: auto;
+  cursor: pointer;
 }
 
 .team-list::-webkit-scrollbar {
@@ -354,8 +394,8 @@ code {
   padding: 0px;
   display: flex;
   justify-content: center;
-  cursor: pointer;
-  /* background-color: deeppink; */
+  /* cursor: pointer;
+  background-color: deeppink; */
 }
 
 .battle-team-container {

@@ -23,16 +23,20 @@ function Home({ cohort, activeUser, handleOpponentTeam, opponentTeam}) {
         handleOpponentTeam(enemyTeam);
     };
 
-    const displayACard = activeUser.name ? <TeamPreviewCard player={activeUser} /> : <p>No Player Selected</p>
+    const renderPreview = !activeUser.name ? <h2>No Player Detected</h2> : 
+        <div>
+            <div className="multi-team-container">
+                <TeamPreviewCard player={activeUser} />
+                <h2 className="versus">VS</h2>
+                <OpponentGen enemyTeam={opponentTeam} />
+            </div>
+            <div className="generate-button-container">
+                <button className="generate-opponent-button" onClick={handleClick}>Generate Opponents</button>
+            </div>
+        </div>
 
     return (
-        <div>
-            {displayACard}
-            <span>VS</span>
-            <h2>The Walking Devs</h2>
-            <OpponentGen enemyTeam={opponentTeam} handleClick={handleClick} />
-
-        </div>
+        <div>{renderPreview}</div>
     )
 }
 
