@@ -1,28 +1,63 @@
 .team-sprite {
-    width: 58px;
-    height: 55px;
+    width: 64px;
+    height: 64px;
     background-repeat: no-repeat;
 }
 
 .sprite {
-    width: 56px;
-    height: 52px;
+    width: 64px;
+    height: 64px;
     background-repeat: repeat-x;
     /* animation: partTheSeas 3s steps(4) infinite;
     animation: newAnimation 3s steps(4) infinite; */
-    padding: 1px;
+    /* padding: 1px; */
     transform: scale(3);
 }
 
-@keyframes partTheSeas {
+.team-page-main-sprite {
+    width: 64px;
+    height: 64px;
+    background-repeat: repeat-x;
+    transform: scale(4);
+}
+
+@keyframes spellcast {
     from {
-        background-position: -3px -137px;
+        background-position: 0px -128px;
     }
     to {
-        background-position: -515px -137px;
+        background-position: -512px -128px;
     }
 }
 
+@keyframes slash {
+    from {
+        background-position: 0px -896px;
+    }
+    to {
+        background-position: -384px -896px;
+    }
+}
+
+@keyframes thrust {
+    from {
+        background-position: 0px -384px;
+    }
+    to {
+        background-position: -512px -384px;
+    }
+}
+
+@keyframes standingStill {
+    from {
+        background-position: 0px -64px;
+    }
+    to {
+        background-position: 0px -64px;
+    }
+}
+
+/* 
 @keyframes partTheSeasBehind {
     from {
         background-position: 0px -10px;
@@ -30,13 +65,4 @@
     to {
         background-position: -512px -10px;
     }
-}
-
-@keyframes standingStill {
-    from {
-        background-position: 0px -72px;
-    }
-    to {
-        background-position: 0px -72px;
-    }
-}
+} */

@@ -24,10 +24,21 @@ function FighterInfo({displayedCoder, teamList, addTeamMember, removeTeamMember}
         )
     })
 
-    const partTheSeasSprite = {
+    const thrust = {
         backgroundImage: `url(${displayedCoder.sprite})`,
-        animation: 'partTheSeas 3s steps(4) infinite',
+        animation: 'thrust 2s steps(4) infinite',
     }
+
+    // const spellcast = {
+    //     backgroundImage: `url(${displayedCoder.sprite})`,
+    //     animation: 'spellcast 2s steps(4) infinite',
+    //     // animation: 'spellcast 2s steps(4)',
+    // }
+
+    // const slash = {
+    //     backgroundImage: `url(${displayedCoder.sprite})`,
+    //     animation: 'slash 2s steps(3) infinite',
+    // }
 
     // const partTheSeasBehind = {
     //     backgroundImage: `url(${displayedCoder.sprite})`,
@@ -53,8 +64,9 @@ function FighterInfo({displayedCoder, teamList, addTeamMember, removeTeamMember}
             </div>
         </div>
         <div className='fighter-info-sprite'>
-            <div style={partTheSeasSprite} className='sprite'></div>
-            {/* <div style={partTheSeasBehind} className='sprite'></div> */}
+            <div>
+                <div style={thrust} className='team-page-main-sprite'></div>
+            </div>
             <img className='fighter-info-image' src={displayedCoder.image} alt={displayedCoder.name}/>
         </div>
     </div>

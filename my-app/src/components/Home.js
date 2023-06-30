@@ -23,12 +23,12 @@ function Home({ cohort, activeUser, handleOpponentTeam, opponentTeam}) {
         handleOpponentTeam(enemyTeam);
     };
 
-    const renderPreview = !activeUser.name ? <h2>No Player Detected</h2> : 
+    const renderPreview = !activeUser.name ? <div><h2>Please Log In or Create a New User</h2><h2>on the Team Page</h2></div> : 
         <div>
             <div className="multi-team-container">
-                <TeamPreviewCard player={activeUser} />
-                <h2 className="versus">VS</h2>
                 <OpponentGen enemyTeam={opponentTeam} />
+                <h2 className="versus">VS</h2>
+                <TeamPreviewCard player={activeUser} />
             </div>
             <div className="generate-button-container">
                 <button className="generate-opponent-button" onClick={handleClick}>Generate Opponents</button>
