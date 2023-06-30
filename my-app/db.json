@@ -631,6 +631,55 @@
         }
       ],
       "id": 4
+    },
+    {
+      "name": "NewAndrew",
+      "teamName": "OB",
+      "fighterList": [
+        {
+          "id": 4,
+          "name": "Amelia Earheart",
+          "tier": 1,
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/OhWJBuO.png",
+          "abilities": [
+            {
+              "firstattack": "destructuring props",
+              "secondattack": "useEffect Hook",
+              "thirdattack": "fetch: DELETE"
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "name": "Syeda Hamalittle",
+          "tier": 1,
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/OhWJBuO.png",
+          "abilities": [
+            {
+              "firstattack": "useEffect Hook",
+              "secondattack": "Redirect Component",
+              "thirdattack": "destructuring props"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "name": "Adam Meow",
+          "tier": 3,
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/dBunAF7.png",
+          "abilities": [
+            {
+              "firstattack": "Down the Rabbit Hole",
+              "secondattack": "meow meow",
+              "thirdattack": "1 Million SNAPS"
+            }
+          ]
+        }
+      ],
+      "id": 5
     }
   ]
 }
