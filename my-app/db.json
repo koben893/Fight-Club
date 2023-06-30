@@ -19,7 +19,7 @@
       "name": "Emiley Poe-tay-toe",
       "tier": 3,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/OhWJBuO.png",
       "abilities": [
         {
           "firstattack": "useEffect Hook",
@@ -33,7 +33,7 @@
       "name": "Alexis Bougie",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/OhWJBuO.png",
       "abilities": [
         {
           "firstattack": "destructuring props",
@@ -47,7 +47,7 @@
       "name": "Amelia Earheart",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/OhWJBuO.png",
       "abilities": [
         {
           "firstattack": "destructuring props",
@@ -61,7 +61,7 @@
       "name": "Erica Belter",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/OhWJBuO.png",
       "abilities": [
         {
           "firstattack": "destructuring props",
@@ -75,7 +75,7 @@
       "name": "Francesco Weeee",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "fetch: DELETE",
@@ -89,7 +89,7 @@
       "name": "Jeffery Arbitrary",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "redirect component",
@@ -103,7 +103,7 @@
       "name": "Jessica Ronaldo",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/OhWJBuO.png",
       "abilities": [
         {
           "firstattack": "useEffect Hook",
@@ -117,7 +117,7 @@
       "name": "Jonathan Grabeverything",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "fetch: DELETE",
@@ -131,7 +131,7 @@
       "name": "Kevin Prozack",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "useEffect Hook",
@@ -145,7 +145,7 @@
       "name": "Marc Kittycat",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "useEffect Hook",
@@ -159,7 +159,7 @@
       "name": "Megan Harry",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/OhWJBuO.png",
       "abilities": [
         {
           "firstattack": "arrow function",
@@ -173,7 +173,7 @@
       "name": "Paul Marchalot",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "fetch: DELETE",
@@ -187,7 +187,7 @@
       "name": "Priyam Yaaas",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "destructuring props",
@@ -201,7 +201,7 @@
       "name": "Sadaf Sadwick",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/OhWJBuO.png",
       "abilities": [
         {
           "firstattack": "destructuring props",
@@ -215,7 +215,7 @@
       "name": "Sean Steamyns",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "useEffect Hook",
@@ -229,7 +229,7 @@
       "name": "Sebastian Shortinez",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "arrow function",
@@ -243,7 +243,7 @@
       "name": "Shanley Caspoor",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/OhWJBuO.png",
       "abilities": [
         {
           "firstattack": "useEffect Hook",
@@ -257,7 +257,7 @@
       "name": "Suan Soon(Ron)",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "useEffect Hook",
@@ -271,7 +271,7 @@
       "name": "Syed Hamalot must be pair",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "destructuring props",
@@ -285,7 +285,7 @@
       "name": "Syeda Hamalittle must be a pair",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/OhWJBuO.png",
       "abilities": [
         {
           "firstattack": "useEffect Hook",
@@ -299,7 +299,7 @@
       "name": "Tj Lister",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "Redirect Component",
@@ -313,7 +313,7 @@
       "name": "Nolan Pummel",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "useEffect Hook",
@@ -327,7 +327,7 @@
       "name": "Andrew aka New Andrew, when dead becomes old andrew",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "arrow function",
@@ -341,7 +341,7 @@
       "name": "Adam 2.0 aka better Adam",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "useEffect Hook",
@@ -355,7 +355,7 @@
       "name": "Ammar the captain, catchphrase when wins: I am the captain now",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "useEffect Hook",
@@ -369,7 +369,7 @@
       "name": "Harjas Barjas",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "arrow function",
@@ -383,7 +383,7 @@
       "name": "Michael Fubar",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "useEffect Hook",
@@ -397,7 +397,7 @@
       "name": "Robert Paisan",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "Redirect Component",
@@ -411,7 +411,7 @@
       "name": "Will Upincamp",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "fetch: DELETE",
@@ -425,7 +425,7 @@
       "name": "Yu me? No yu",
       "tier": 2,
       "image": "https://i.imgur.com/GwcwHSU.png",
-      "sprite": "https://i.imgur.com/SCWgUQJ.png",
+      "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
         {
           "firstattack": "fetch: DELETE",
@@ -449,7 +449,7 @@
           "name": "Jonathan Grabeverything",
           "tier": 1,
           "image": "https://i.imgur.com/GwcwHSU.png",
-          "sprite": "https://i.imgur.com/SCWgUQJ.png",
+          "sprite": "https://i.imgur.com/jyVzHzy.png",
           "abilities": [
             {
               "firstattack": "fetch: DELETE",
@@ -463,7 +463,7 @@
           "name": "Syed Hamalot must be pair",
           "tier": 1,
           "image": "https://i.imgur.com/GwcwHSU.png",
-          "sprite": "https://i.imgur.com/SCWgUQJ.png",
+          "sprite": "https://i.imgur.com/jyVzHzy.png",
           "abilities": [
             {
               "firstattack": "destructuring props",
@@ -477,7 +477,7 @@
           "name": "Sean Steamyns",
           "tier": 1,
           "image": "https://i.imgur.com/GwcwHSU.png",
-          "sprite": "https://i.imgur.com/SCWgUQJ.png",
+          "sprite": "https://i.imgur.com/jyVzHzy.png",
           "abilities": [
             {
               "firstattack": "useEffect Hook",
@@ -498,7 +498,7 @@
           "name": "Erica Belter",
           "tier": 1,
           "image": "https://i.imgur.com/GwcwHSU.png",
-          "sprite": "https://i.imgur.com/SCWgUQJ.png",
+          "sprite": "https://i.imgur.com/jyVzHzy.png",
           "abilities": [
             {
               "firstattack": "destructuring props",
@@ -512,7 +512,7 @@
           "name": "Alexis Bougie",
           "tier": 1,
           "image": "https://i.imgur.com/GwcwHSU.png",
-          "sprite": "https://i.imgur.com/SCWgUQJ.png",
+          "sprite": "https://i.imgur.com/OhWJBuO.png",
           "abilities": [
             {
               "firstattack": "destructuring props",
@@ -526,7 +526,7 @@
           "name": "Marc Kittycat",
           "tier": 1,
           "image": "https://i.imgur.com/GwcwHSU.png",
-          "sprite": "https://i.imgur.com/SCWgUQJ.png",
+          "sprite": "https://i.imgur.com/jyVzHzy.png",
           "abilities": [
             {
               "firstattack": "useEffect Hook",
@@ -547,7 +547,7 @@
           "name": "Priyam Yaaas",
           "tier": 1,
           "image": "https://i.imgur.com/GwcwHSU.png",
-          "sprite": "https://i.imgur.com/SCWgUQJ.png",
+          "sprite": "https://i.imgur.com/jyVzHzy.png",
           "abilities": [
             {
               "firstattack": "destructuring props",
@@ -575,7 +575,7 @@
           "name": "Adam 2.0 aka better Adam",
           "tier": 1,
           "image": "https://i.imgur.com/GwcwHSU.png",
-          "sprite": "https://i.imgur.com/SCWgUQJ.png",
+          "sprite": "https://i.imgur.com/jyVzHzy.png",
           "abilities": [
             {
               "firstattack": "useEffect Hook",
@@ -596,7 +596,7 @@
           "name": "Erica Belter",
           "tier": 1,
           "image": "https://i.imgur.com/GwcwHSU.png",
-          "sprite": "https://i.imgur.com/SCWgUQJ.png",
+          "sprite": "https://i.imgur.com/OhWJBuO.png",
           "abilities": [
             {
               "firstattack": "destructuring props",
@@ -610,7 +610,7 @@
           "name": "Francesco Weeee",
           "tier": 1,
           "image": "https://i.imgur.com/GwcwHSU.png",
-          "sprite": "https://i.imgur.com/SCWgUQJ.png",
+          "sprite": "https://i.imgur.com/jyVzHzy.png",
           "abilities": [
             {
               "firstattack": "fetch: DELETE",
@@ -624,7 +624,7 @@
           "name": "Jeffery Arbitrary",
           "tier": 1,
           "image": "https://i.imgur.com/GwcwHSU.png",
-          "sprite": "https://i.imgur.com/SCWgUQJ.png",
+          "sprite": "https://i.imgur.com/jyVzHzy.png",
           "abilities": [
             {
               "firstattack": "redirect component",
