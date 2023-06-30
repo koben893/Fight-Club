@@ -1,20 +1,27 @@
 import React, { useState } from 'react'
 
+const animateFighter = {
+  "firstattack" : "partTheSeas 3s steps(4)",
+  "secondattack" : "partTheSeasBehind 3s steps(4) infinite",
+  "thirdattack" : 'standingStill 3s infinite',
+  "default" :  'standingStill 3s infinite'
+}
+
 function FighterDisplay({ fighter, handleFight, pNo }) {
-  const [spriteState, setSpriteState] = useState('standingStill');
+  const [spriteState, setSpriteState] = useState('default');
   const { name, sprite, tier, abilities } = fighter;
   const displaySprite = {
     backgroundImage: `url(${sprite})`,
-    animation: 'standingStill 3s infinite',
+    animation:`${animateFighter[spriteState]}`,
+    transform: 'scale(4)'
   }
-
+  console.log(animateFighter[spriteState]);
 
   const handleClick = (e) => {
     handleFight(pNo, tier)
     setSpriteState(e.target.name)
   }
 
-  console.log(spriteState)
   return (
     <section>
       <h4>{name}</h4>
