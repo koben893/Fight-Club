@@ -3,7 +3,7 @@ import TeamCard from './TeamCard';
 
 function OpponentGen({enemyTeam}) {
 
-const renderList = (enemyTeam.length === 0) ? <div><p>Generate a</p><p>Random Team</p><p>to Fight Using</p><p>the Button</p><p>Below</p></div> : enemyTeam.map(coder=> <div><TeamCard key={coder.id} id={coder.id} name={coder.name} sprite={coder.sprite}/></div>)
+const renderList = (enemyTeam.length === 0) ? <div><p>Generate a</p><p>Random Team</p><p>to Fight Using</p><p>the Button</p><p>Below</p></div> : enemyTeam.map(coder=><TeamCard key={coder.id} id={coder.id} name={coder.name} sprite={coder.sprite}/>)
     return (
     <div className='preview-card'>
         <h3 className='preview-title'>CPU</h3>

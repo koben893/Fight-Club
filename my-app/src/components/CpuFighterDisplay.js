@@ -1,15 +1,13 @@
-import React,{useState} from 'react'
+import React from 'react'
 
 const animateFighter = {
-    "firstattack" : "spellcast 2s steps(4) infinite",
-    "secondattack" : "slash 2s steps(3) infinite",
-    "thirdattack" : 'thrust 2s steps(4) infinite',
+    "firstattack" : "spellcast 2s steps(4)",
+    "secondattack" : "slash 2s steps(3)",
+    "thirdattack" : 'thrust 2s steps(4)',
     "default" :  'standingStill 3s infinite'
 }
 
 function CpuFighterDisplay({ fighter, cpuAtk}) {
-    // const [spriteState, setSpriteState] = useState('default');
-    console.log(typeof cpuAtk);
     const { name, sprite} = fighter;
     const displaySprite = {
         backgroundImage: `url(${sprite})`,
