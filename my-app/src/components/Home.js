@@ -1,45 +1,37 @@
-import Login from './Login'
+
 import TeamPreviewCard from "./TeamPreviewCard";
 import OpponentGen from './OpponentGen';
-import { useState } from 'react';
 
-function Home({ cohort, activeUser, opponents }) {
-    const [randomOpponent, setRandomOpponent] = useState([])
-    // const [randomNum, setRandomNum] = useState(1)
-
-    const displayACard = activeUser.name ? <TeamPreviewCard player={activeUser}/> : <p>No Player Selected</p>
-    let playerTwo = {name: 'CPU', teamName : 'CodeBosses', fighterList : cohort.slice(10, 13) }
-
+function Home({ cohort, activeUser, handleOpponentTeam, opponentTeam}) {
     function randomNumberInRange(min, max) {
         //get number between min (inclusive) and max (inclusive)
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
-    
-    function randomNumberInRange(min, max) {
-        //get number between min (inclusive) and max (inclusive)
-        return Math.floor(Math.random() * (max - min + 1)) + min;
+
+    function recurRandArr(l = 0, randArr = ['', '', ''], eleA = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]) {
+        if (l === 3) return randArr;
+        let ioEl = randomNumberInRange(0, eleA.length - 1);
+        randArr[l] = eleA[ioEl];
+        eleA.splice(ioEl, 1);
+        return recurRandArr(l + 1, randArr, eleA)
     }
+
     
     const handleClick = () => {
-        setRandomOpponent([]);
-        for( var i = 0; i < 3; i++){
-            let randomNum = randomNumberInRange(1, 31);
-            if(randomNum !== randomOpponent)
-            {
-                setRandomOpponent(cur=>[...cur, randomNum])
-            }
-        }
-        console.log(randomOpponent)
-    }
+        const randomNum = recurRandArr();
+        const enemyTeam = cohort.filter(opponent => (randomNum[0] === opponent.id || randomNum[1] === opponent.id || randomNum[2] === opponent.id))
+        handleOpponentTeam(enemyTeam);
+    };
+
+    const displayACard = activeUser.name ? <TeamPreviewCard player={activeUser} /> : <p>No Player Selected</p>
+
     return (
         <div>
             {displayACard}
             <span>VS</span>
-            {/* <TeamPreviewCard player={playerTwo}/> */}
-            <h2>Opposing Team is: {randomOpponent}</h2>
-            <OpponentGen opponents={opponents} randomOpponents={randomOpponent}/>
-            
-            <button onClick={handleClick}>Generate Opponents</button>
+            <h2>The Walking Devs</h2>
+            <OpponentGen enemyTeam={opponentTeam} handleClick={handleClick} />
+
         </div>
     )
 }
