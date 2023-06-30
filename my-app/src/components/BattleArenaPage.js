@@ -58,7 +58,7 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
         setCpuAtk('default');
       }
 
-      if ((team.length === 0 && uHealth <= 0 ) || (oTeam.length === 0 && opHealth <= 0)) {
+      if ((team.length === 0 && uHealth <= 0) || (oTeam.length === 0 && opHealth <= 0)) {
         alert("game over")
         setReadAttack(``);
         setUFighter(activeUser.fighterList[0]);
@@ -94,13 +94,16 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
 
 
   const handleFight = (pNo, dmg, atk) => {
-    setTurn(!turn);
+    
     setTimeout(() => {
-      setReadAttack(`${uFighter.name} use ${atk} and deals ${dmg} damage`)
-      if (pNo === 1) setOpHealth(c => {
-        if (c - dmg < 0) return 0
-        else return c - dmg
-      })
+      if (pNo === 1) {
+        setReadAttack(`${uFighter.name} use ${atk} and deals ${dmg} damage`)
+        setOpHealth(c => {
+          if (c - dmg < 0) return 0
+          else return c - dmg
+        })
+      }
+      setTurn(!turn);
       //if (pNo === 2) setUHealth(c => c - tier)
     }, 2000)
   }
