@@ -60,7 +60,7 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
   }
 
   useEffect(()=>{
-    const cpuAtkSet = ['firstattck', 'secondattack', 'thirdattack']
+    const cpuAtkSet = ['firstattack', 'secondattack', 'thirdattack']
     const dmg = oFighter.tier;
     if(!turn){
       const temp = cpuAtkSet[Math.floor(Math.random() *3)]
