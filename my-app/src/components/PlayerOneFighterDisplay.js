@@ -7,7 +7,7 @@ const animateFighter = {
   "default" :  'standingStill 3s infinite'
 }
 
-function PlayerOneFighterDisplay({ fighter, handleFight, pNo, turn}) {
+function PlayerOneFighterDisplay({ fighter, handleFight, pNo, turn, uHealth}) {
   const [spriteState, setSpriteState] = useState('default');
   const { name, sprite, tier, abilities } = fighter;
   const displaySprite = {
@@ -28,9 +28,9 @@ function PlayerOneFighterDisplay({ fighter, handleFight, pNo, turn}) {
       <div className='moves-button-container'>
         <h2 className='teal-header'>{name}</h2>
         <div className='moves-button-list'>
-          <button className='moves-button' disabled={!turn} onClick={handleClick} name="firstattack">{abilities[0].firstattack}</button>
-          <button className='moves-button' disabled={!turn} onClick={handleClick} name="secondattack">{abilities[0].secondattack}</button>
-          <button className='moves-button' disabled={!turn} onClick={handleClick} name="thirdattack">{abilities[0].thirdattack}</button>
+          <button className='moves-button' disabled={!turn || uHealth === 0} onClick={handleClick} name="firstattack">{abilities[0].firstattack}</button>
+          <button className='moves-button' disabled={!turn || uHealth === 0} onClick={handleClick} name="secondattack">{abilities[0].secondattack}</button>
+          <button className='moves-button' disabled={!turn || uHealth === 0} onClick={handleClick} name="thirdattack">{abilities[0].thirdattack}</button>
         </div>
       </div>
       <div className='current-fighter'>

@@ -128,7 +128,7 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
     <section className='versus-container'>
       <div className='player-one'>
         <h1 className='yellow-header'>{activeUser.teamName}</h1>
-        <PlayerOneFighterDisplay fighter={uFighter} handleFight={handleFight} pNo={1} turn={turn} />
+        <PlayerOneFighterDisplay fighter={uFighter} handleFight={handleFight} pNo={1} turn={turn} uHealth={uHealth}/>
         <div className='hp-team-list-container'>
           <div className='health-container'>
             <p className='health'>Health</p>
