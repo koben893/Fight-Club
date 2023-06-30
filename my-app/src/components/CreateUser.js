@@ -10,7 +10,7 @@ function CreateUser({handleUpdateActUser, teamList}) {
     e.preventDefault()
 
     if (teamInfo.name === '' || teamInfo.teamName === '') alert("need a name and team name")
-    else if (teamList.length < 3) alert('need 3 Coders')
+    else if (teamList.length !== 3) alert('need 3 Coders')
     else {
       const utdUser = {...teamInfo};
       const utdTL = [...teamList];
