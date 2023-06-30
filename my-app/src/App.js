@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Title of Our App</h1>
+      <h1>Flatiron Fighter</h1>
       <Login userList={userList} handleLogInUser={handleLogInUser} activeUser={activeUser} />
       <Navbar />
       <Switch>

@@ -10,7 +10,6 @@ function TeamContainer({teamList, handleSelect, handleTeamUpdate, activeUser}) {
           handleSelect={handleSelect}
         /> 
     ) 
-
     return (
             <div className="team-list">{renderedTeams}</div>
     )
