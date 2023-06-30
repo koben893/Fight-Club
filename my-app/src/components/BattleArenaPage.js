@@ -71,63 +71,47 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
         setUHealth(allHealth);
         setOpHealth(allHealth);
       }
-    }, 1000)
+    }, 2000)
 
     return function cleanup() {
       clearTimeout(timerIDx);
     };
   }, [uHealth, opHealth, oTeam, team, activeUser, opponentTeam])
 
-  // useEffect(() => {
-  //   const timerIDy = setTimeout(() => {
-  //     if (round < 4) {
-  //       setReadAttack(`Round ${round} Begin`);
-  //       setUFighter(activeUser.fighterList[round])
-  //       setOFighter(opponentTeam[round])
-  //     }
-  //   }, 2000)
-
-  //   return function cleanup() {
-  //     clearTimeout(timerIDy);
-  //   };
-
-  // }, [activeUser, opponentTeam, round])
-
-
   const handleFight = (pNo, dmg, atk) => {
-    
+    const dmgR = Math.floor(Math.random()*3) + 1;
+    setTurn(!turn);
     setTimeout(() => {
       if (pNo === 1) {
-        setReadAttack(`${uFighter.name} use ${atk} and deals ${dmg} damage`)
+        setReadAttack(`${uFighter.name} use ${atk} and deals ${dmgR} damage`)
         setOpHealth(c => {
-          if (c - dmg < 0) return 0
-          else return c - dmg
+          if (c - dmgR < 0) return 0
+          else return c - dmgR
         })
       }
-      setTurn(!turn);
-      //if (pNo === 2) setUHealth(c => c - tier)
     }, 2000)
   }
 
   useEffect(() => {
     const cpuAtkSet = ['firstattack', 'secondattack', 'thirdattack']
-    const dmg = oFighter.tier;
+    //const dmg = oFighter.tier;
+    const dmgR = Math.floor(Math.random()*3) + 1;
     if (!turn && opHealth > 0) {
       const temp = cpuAtkSet[Math.floor(Math.random() * 3)]
 
       const timerIDy = setTimeout(() => {
         setCpuAtk(temp)
-      }, 2000)
+      }, 3000)
 
       const timerIDx = setTimeout(() => {
-        setReadAttack(`${oFighter.name} uses ${oFighter.abilities[0][temp]} and deals ${dmg} damage`)
+        setReadAttack(`${oFighter.name} uses ${oFighter.abilities[0][temp]} and deals ${dmgR} damage`)
         setCpuAtk("default")
         setUHealth(c => {
-          if (c - dmg < 0) return 0
-          else return c - dmg
+          if (c - dmgR < 0) return 0
+          else return c - dmgR
         })
         setTurn(!turn);
-      }, 4000)
+      }, 5000)
 
       return function cleanup() {
         clearTimeout(timerIDx);
