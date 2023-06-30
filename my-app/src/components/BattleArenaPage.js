@@ -77,28 +77,47 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
   const isTeamDisplayed = (team.length === 0) ? <div></div> : team.map(coder => <TeamCard key={coder.id} id={coder.id} name={coder.name} sprite={coder.sprite} />)
   const isOTeamDisplayed = (oTeam.length === 0) ? <div></div> : oTeam.map(coder => <TeamCard key={coder.id} id={coder.id} name={coder.name} sprite={coder.sprite} />)
  
-  const isArenaDisplayed = !uFighter.name || !oFighter.name ? <h4>Waiting For User & Opponent</h4> :
-    <section>
-      <h3>{uHealth}</h3>
-      <PlayerOneFighterDisplay fighter={uFighter} handleFight={handleFight} pNo={1} turn={turn}/>
-      <div>
-        {isTeamDisplayed}
+  const isArenaDisplayed = !uFighter.name || !oFighter.name ? <div><h2>Waiting for User and Opponent</h2><h2>(Check Home Page)</h2></div> :
+    <section className='versus-container'>
+      <div className='player-one'>
+        <h1 className='yellow-header'>Team Name Here</h1>
+        <PlayerOneFighterDisplay fighter={uFighter} handleFight={handleFight} pNo={1} turn={turn}/>
+        <div className='hp-team-list-container'>
+          <div className='health-container'>
+              <p className='health'>Health</p>
+              <h1 className='hp'>{uHealth}</h1>
+          </div>
+          <div className='hp-team-list'>
+            {isTeamDisplayed}
+          </div>
+        </div>
       </div>
 
-      <span>Vs</span>
+      <h2 className="versus">VS</h2>
 
-      <h3>{opHealth}</h3>
-      {/* <PlayerOneFighterDisplay fighter={oFighter} handleFight={handleFight} pNo={2} turn={!turn}/> */}
-      <CpuFighterDisplay fighter={oFighter} cpuAtk={cpuAtk}/>
-      <div>
-        {isOTeamDisplayed}
+      <div className='player-one'>
+        <h1 className='yellow-header'>Team Name Here</h1>
+        {/* <PlayerOneFighterDisplay fighter={oFighter} handleFight={handleFight} pNo={2} turn={!turn}/> */}
+        <CpuFighterDisplay fighter={oFighter} cpuAtk={cpuAtk}/>
+        <div className='hp-team-list-container'>
+        <div className='hp-team-list'>
+            {isOTeamDisplayed}
+          </div>
+          <div className='health-container'>
+              <p className='health'>Health</p>
+              <h1 className='hp'>{opHealth}</h1>
+          </div>
+          <div className='hp-team-list'>
+            {isOTeamDisplayed}
+          </div>
+        </div>
       </div>
     </section>
 
   return (
     <div>
-      <h4>{readAttack}</h4>
       {isArenaDisplayed}
+      <h4>{readAttack}</h4>
     </div>
   )
 }

@@ -35,7 +35,11 @@ code {
 }
 
 .yellow-header {
-  color: #f9c51a
+  color: #f9c51a;
+}
+
+.teal-header {
+  color: #00efe1;
 }
 
 .button-container {
@@ -213,6 +217,7 @@ code {
   padding-top: 30px;
   padding-bottom: 10px;
   align-self: flex-start;
+  font-weight: 400;
 }
 
 .create-form {
@@ -371,13 +376,16 @@ code {
 
 .team-list {
   /* padding-bottom: 0px; */
+  margin-top: -25px;
+  width: 250px;
   max-height: 225px;
   overflow-y: auto;
   cursor: pointer;
+  /* background-color: chartreuse; */
 }
 
 .team-list::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
   background-color: #181827;
   /* border: 2px solid #0c323e; */
   border-radius: 5px;
@@ -394,8 +402,8 @@ code {
   padding: 0px;
   display: flex;
   justify-content: center;
-  /* cursor: pointer;
-  background-color: deeppink; */
+  cursor: pointer;
+  /* background-color: deeppink; */
 }
 
 .battle-team-container {
@@ -420,6 +428,140 @@ code {
 .fighter-info-image {
   width: 150px;
   padding-bottom: 25px;
+}
+
+.versus-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  /* background-color: brown; */
+}
+
+.player-one {
+  width: 420px;
+  /* background-color: green; */
+}
+
+.hp-team-list-container{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 420px;
+  /* background-color: orange; */
+}
+
+.hp-team-list {
+  padding-top: 5px;
+  width: 290px;
+  /* background-color: teal; */
+}
+
+.health-container {
+  /* padding-top: 30px; */
+  width: 150px;
+  border: 2px solid #0c323e;
+  border-radius: 5px;
+  /* background-color: violet; */
+}
+
+.health {
+  /* color: #0c323e; */
+  color: #00efe1;
+  margin-top: 22px;
+  padding-top: 10px;
+}
+
+.hp {
+  margin-top: -18px;
+  font-size: 30pt;
+}
+
+.current-fighter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  padding-top: 90px;
+  /* background-color: coral; */
+}
+
+.cpu-moves-button-container {
+  width: 270px;
+  /* background-color: chartreuse; */
+}
+
+.cpu-moves-button-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 175px;
+  padding-bottom: 10px;
+  /* background-color: cornflowerblue; */
+}
+
+.cpu-moves-button {
+  border: none;
+  border-radius: 3px;
+  width: 250px;
+  font-family: 'Share Tech Mono';
+  padding: 12px;
+  color: #f9c51a;
+  background-color: #181827;
+  /* background-color: #181827; */
+}
+
+.moves-button-container {
+  width: 270px;
+  /* background-color: chartreuse; */
+}
+
+.moves-button-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 175px;
+  padding-bottom: 10px;
+  /* background-color: cornflowerblue; */
+}
+
+.moves-button {
+  border: none;
+  border-radius: 3px;
+  width: 250px;
+  font-family: 'Share Tech Mono';
+  padding: 12px;
+  color: #ffffff;
+  background-color: #23232f;
+  /* background-color: #181827; */
+  cursor: pointer;
+}
+
+.moves-button:hover {
+  /* font-weight: 700; */
+  color: #030416;
+  background-color: #00efe1;
+}
+
+.moves-button:disabled {
+  /* font-weight: 700; */
+  color: #f9c51a;
+  background-color: #181827;
+  cursor: default;
+}
+
+.moves-sprite-container {
+  display: flex;
+}
+
+.player-two {
+  width: 420px;
+  background-color: blue;
+}
+
+.reader-container {
+  background-color: blue;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');

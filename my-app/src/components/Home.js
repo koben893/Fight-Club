@@ -22,14 +22,16 @@ function Home({ cohort, activeUser, handleOpponentTeam, opponentTeam}) {
         const enemyTeam = cohort.filter(opponent => (randomNum[0] === opponent.id || randomNum[1] === opponent.id || randomNum[2] === opponent.id))
         handleOpponentTeam(enemyTeam);
     };
-    //Welcome To Flat Iron Fighter, In order to begin the game, Please Sign In or Go to the Team Page To Create A User and Team.  
+
+  //Welcome To Flat Iron Fighter, In order to begin the game, Please Sign In or Go to the Team Page To Create A User and Team.  
     //Disclaimer: All Characters of this game are merely imitations and do NOT represent or intend to insult any REAL-world persons
-    const renderPreview = !activeUser.name ? <h2>No Player Detected</h2> : 
+
+    const renderPreview = !activeUser.name ? <div><h2>Please Log In or Create a New User</h2><h2>on the Team Page</h2></div> : 
         <div>
             <div className="multi-team-container">
-                <TeamPreviewCard player={activeUser} />
-                <h2 className="versus">VS</h2>
                 <OpponentGen enemyTeam={opponentTeam} />
+                <h2 className="versus">VS</h2>
+                <TeamPreviewCard player={activeUser} />
             </div>
             <div className="generate-button-container">
                 <button className="generate-opponent-button" onClick={handleClick}>Generate Opponents</button>

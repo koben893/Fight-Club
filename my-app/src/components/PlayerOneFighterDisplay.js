@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
 const animateFighter = {
-  "firstattack" : "partTheSeas 3s steps(4)",
-  "secondattack" : "partTheSeasBehind 3s steps(4) infinite",
-  "thirdattack" : 'standingStill 3s infinite',
+  "firstattack" : "spellcast 2s steps(4) infinite",
+  "secondattack" : "slash 2s steps(3) infinite",
+  "thirdattack" : 'thrust 2s steps(4) infinite',
   "default" :  'standingStill 3s infinite'
 }
 
@@ -13,7 +13,7 @@ function PlayerOneFighterDisplay({ fighter, handleFight, pNo, turn}) {
   const displaySprite = {
     backgroundImage: `url(${sprite})`,
     animation:`${animateFighter[spriteState]}`,
-    transform: 'scale(4)'
+    transform: 'scale(5)'
   }
   //console.log(animateFighter[spriteState]);
 
@@ -23,12 +23,18 @@ function PlayerOneFighterDisplay({ fighter, handleFight, pNo, turn}) {
   }
 
   return (
-    <section>
-      <h4>{name}</h4>
-      <button disabled={!turn} onClick={handleClick} name="firstattack">{abilities[0].firstattack}</button>
-      <button disabled={!turn} onClick={handleClick} name="secondattack">{abilities[0].secondattack}</button>
-      <button disabled={!turn} onClick={handleClick} name="thirdattack">{abilities[0].thirdattack}</button>
-      <div style={displaySprite} className='team-sprite'></div>
+    <section className='moves-sprite-container'>
+      <div className='moves-button-container'>
+        <h2 className='teal-header'>{name}</h2>
+        <div className='moves-button-list'>
+          <button className='moves-button' disabled={!turn} onClick={handleClick} name="firstattack">{abilities[0].firstattack}</button>
+          <button className='moves-button' disabled={!turn} onClick={handleClick} name="secondattack">{abilities[0].secondattack}</button>
+          <button className='moves-button' disabled={!turn} onClick={handleClick} name="thirdattack">{abilities[0].thirdattack}</button>
+        </div>
+      </div>
+      <div className='current-fighter'>
+        <div style={displaySprite} className='team-sprite'></div>
+      </div>
     </section>
 
   )
