@@ -23,6 +23,9 @@ function Home({ cohort, activeUser, handleOpponentTeam, opponentTeam}) {
         handleOpponentTeam(enemyTeam);
     };
 
+  //Welcome To Flat Iron Fighter, In order to begin the game, Please Sign In or Go to the Team Page To Create A User and Team.  
+    //Disclaimer: All Characters of this game are merely imitations and do NOT represent or intend to insult any REAL-world persons
+
     const renderPreview = !activeUser.name ? <div><h2>Please Log In or Create a New User</h2><h2>on the Team Page</h2></div> : 
         <div>
             <div className="multi-team-container">
