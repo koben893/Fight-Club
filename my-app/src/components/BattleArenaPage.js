@@ -14,9 +14,7 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
   const [turn, setTurn] = useState(true);
   const [cpuAtk, setCpuAtk] = useState('default');
   const [readAttack, setReadAttack] = useState("")
-  const [round, setRound] = useState(1);
 
-  console.log(round);
   useEffect(() => {
     if (activeUser.fighterList) {
       setTeam([activeUser.fighterList[1], activeUser.fighterList[2]])
@@ -44,27 +42,30 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
 
   useEffect(() => {
     const timerIDx = setTimeout(() => {
-      if (round <= 2 && (uHealth <= 0 || opHealth <= 0)) {
+
+      if (team.length > 0 && uHealth <= 0) {
         setReadAttack('Match Over');
-        setReadAttack(`Next Round Begin`);
-        setUFighter(activeUser.fighterList[round]);
-        setTeam(c=>c.slice(1));
-        setOFighter(opponentTeam[round]);
-        setOTeam(c=>c.slice(1));
-   
+        setTeam(c => c.slice(1));
+        setUFighter(team[0]);
         setUHealth(5);
-        setOpHealth(5);
-        setRound(c => c + 1);
       }
 
-      if(round === 3 && (uHealth <= 0 || opHealth <= 0) ) {
+      if (oTeam.length > 0 && opHealth <= 0) {
+        setReadAttack('Match Over');
+        setOTeam(c => c.slice(1));
+        setOFighter(oTeam[0]);
+        setOpHealth(5);
+        setCpuAtk('default');
+      }
+
+      if ((team.length === 0 && uHealth <= 0 ) || (oTeam.length === 0 && opHealth <= 0)) {
         alert("game over")
         setReadAttack(``);
         setUFighter(activeUser.fighterList[0]);
         setTeam([activeUser.fighterList[1], activeUser.fighterList[2]]);
         setOFighter(opponentTeam[0]);
         setOTeam([opponentTeam[1], opponentTeam[2]]);
-        setRound(1);
+        setCpuAtk('default');
         setTurn(true);
         setUHealth(5);
         setOpHealth(5);
@@ -74,7 +75,7 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
     return function cleanup() {
       clearTimeout(timerIDx);
     };
-  }, [uHealth, opHealth, round, activeUser, opponentTeam])
+  }, [uHealth, opHealth, oTeam, team, activeUser, opponentTeam])
 
   // useEffect(() => {
   //   const timerIDy = setTimeout(() => {
