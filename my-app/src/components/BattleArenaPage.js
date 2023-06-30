@@ -4,7 +4,7 @@ import PlayerOneFighterDisplay from './PlayerOneFighterDisplay';
 import TeamCard from './TeamCard';
 import CpuFighterDisplay from './CpuFighterDisplay';
 
-const allHealth = 5;
+const allHealth = 10;
 function BattleArenaPage({ activeUser, opponentTeam }) {
   const [team, setTeam] = useState([]);
   const [oTeam, setOTeam] = useState([]);
@@ -79,7 +79,7 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
   }, [uHealth, opHealth, oTeam, team, activeUser, opponentTeam])
 
   const handleFight = (pNo, dmg, atk) => {
-    const dmgR = Math.floor(Math.random()*3) + 1;
+    const dmgR = Math.ceil(Math.random()*2 * dmg);
     setTurn(!turn);
     setTimeout(() => {
       if (pNo === 1) {
@@ -94,8 +94,8 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
 
   useEffect(() => {
     const cpuAtkSet = ['firstattack', 'secondattack', 'thirdattack']
-    //const dmg = oFighter.tier;
-    const dmgR = Math.floor(Math.random()*3) + 1;
+    const dmg = oFighter.tier;
+    const dmgR = Math.ceil(Math.random()*2 * dmg);
     if (!turn && opHealth > 0) {
       const temp = cpuAtkSet[Math.floor(Math.random() * 3)]
 
