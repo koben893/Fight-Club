@@ -33,13 +33,15 @@ function CreateUser({handleUpdateActUser, teamList}) {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor='uname'>Create User Name:</label>
-        <input type='text' id='uname' name='uname' value={teamInfo.name} onChange={e => setTeaminfo(current => ({ ...current, name: e.target.value }))}></input>
-        <label htmlFor='uname'>Create Team Name:</label>
-        <input type='text' id='tname' name='tname' value={teamInfo.teamName} onChange={e => setTeaminfo(current => ({ ...current, teamName: e.target.value }))}></input>
-        <input type="submit" value="Submit"></input>
+    <div className='create-user-container'>
+      <form className='create-user-form' onSubmit={handleSubmit}>
+        <label className='create-label' htmlFor='uname'>Create User Name:</label>
+        <input className='create-form' type='text' id='uname' name='uname' value={teamInfo.name} onChange={e => setTeaminfo(current => ({ ...current, name: e.target.value }))}></input>
+        <label className='create-label' htmlFor='uname'>Create Team Name:</label>
+        <input className='create-form' type='text' id='tname' name='tname' value={teamInfo.teamName} onChange={e => setTeaminfo(current => ({ ...current, teamName: e.target.value }))}></input>
+          <div className='create-submit-container'>
+            <input className='create-submit' type="submit" value="Submit"></input>
+          </div>
       </form>
     </div>
   )

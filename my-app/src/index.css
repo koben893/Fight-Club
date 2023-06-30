@@ -51,6 +51,7 @@ code {
   padding: 12px;
   color: #ffffff;
   background-color: #23232f;
+  cursor: pointer;
 }
 
 .add-team-button:hover {
@@ -73,6 +74,7 @@ code {
   padding: 12px;
   color: #f9c51a;
   background-color: #181827;
+  cursor: pointer;
 }
 
 .remove-team-button:hover {
@@ -95,6 +97,7 @@ code {
   padding: 12px;
   color: #030416;
   background-color: #f9c51a;
+  cursor: pointer;
 }
 
 .team-button:hover {
@@ -177,7 +180,6 @@ code {
   border: 2px solid #0c323e;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
-  /* border-radius: 100px; */
   width: 100px;
   font-family: 'Fira Code';
   font-size: 10pt;
@@ -185,11 +187,70 @@ code {
   color: #ffffff;
   padding: 7px;
   background-color: #030416;
+  cursor: pointer;
 }
 
 .login-button:hover {
   border: 2px solid #00efe1;
   color: #00efe1;
+}
+
+.create-user-form {
+  width: 375px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-user-container {
+  display: flex;
+  justify-content: center;
+}
+
+.create-label {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  align-self: flex-start;
+}
+
+.create-form {
+  width: 350px;
+  padding: 12px;
+  background-color: #030416;
+  border: 1px solid #c4c4c4;
+  border-radius: 3px;
+  outline: none;
+  color: #ffffff;
+  font-family: 'Fira Code';
+  font-weight: 400;
+}
+
+.create-submit {
+  border: none;
+  border-radius: 3px;
+  width: 380px;
+  font-family: 'Fira Code';
+  font-weight: 700;
+  padding: 12px;
+  color: #ffffff;
+  background-color: #23232f;
+  cursor: pointer;
+}
+
+.create-submit:hover {
+  border: none;
+  border-radius: 3px;
+  width: 380px;
+  font-family: 'Fira Code';
+  font-weight: 700;
+  padding: 12px;
+  color: #030416;
+  background-color: #00efe1;
+}
+
+.create-submit-container {
+  padding-top: 65px;
 }
 
 .preview-card {
@@ -293,6 +354,7 @@ code {
   padding: 0px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
   /* background-color: deeppink; */
 }
 
