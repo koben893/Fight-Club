@@ -31,7 +31,7 @@
     {
       "id": 3,
       "name": "Alexis Bougie",
-      "tier": 1,
+      "tier": 2,
       "image": "https://i.imgur.com/GwcwHSU.png",
       "sprite": "https://i.imgur.com/OhWJBuO.png",
       "abilities": [
@@ -73,7 +73,7 @@
     {
       "id": 6,
       "name": "Francesco Weeee",
-      "tier": 1,
+      "tier": 2,
       "image": "https://i.imgur.com/GwcwHSU.png",
       "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
@@ -101,7 +101,7 @@
     {
       "id": 8,
       "name": "Jessica Ronaldo",
-      "tier": 1,
+      "tier": 2,
       "image": "https://i.imgur.com/GwcwHSU.png",
       "sprite": "https://i.imgur.com/OhWJBuO.png",
       "abilities": [
@@ -115,7 +115,7 @@
     {
       "id": 9,
       "name": "Jonathan Grabeverything",
-      "tier": 1,
+      "tier": 2,
       "image": "https://i.imgur.com/GwcwHSU.png",
       "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
@@ -143,7 +143,7 @@
     {
       "id": 11,
       "name": "Marc Kittycat",
-      "tier": 1,
+      "tier": 2,
       "image": "https://i.imgur.com/GwcwHSU.png",
       "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
@@ -338,7 +338,7 @@
     },
     {
       "id": 25,
-      "name": "Adam 2.0 aka better Adam",
+      "name": "Adam 2.0, better Adam",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
       "sprite": "https://i.imgur.com/jyVzHzy.png",
@@ -353,7 +353,7 @@
     {
       "id": 26,
       "name": "Ammar the Captain",
-      "tier": 1,
+      "tier": 2,
       "image": "https://i.imgur.com/GwcwHSU.png",
       "sprite": "https://i.imgur.com/jyVzHzy.png",
       "abilities": [
@@ -422,7 +422,7 @@
     },
     {
       "id": 31,
-      "name": "Yu me? No Yu",
+      "name": "Yu Me? No Yu",
       "tier": 2,
       "image": "https://i.imgur.com/GwcwHSU.png",
       "sprite": "https://i.imgur.com/jyVzHzy.png",
@@ -456,7 +456,7 @@
         },
         {
           "id": 20,
-          "name": "Syed Hamalot must be pair",
+          "name": "Syed Hamalot",
           "tier": 1,
           "image": "https://i.imgur.com/GwcwHSU.png",
           "sprite": "https://i.imgur.com/jyVzHzy.png",
@@ -506,7 +506,7 @@
         {
           "id": 3,
           "name": "Alexis Bougie",
-          "tier": 1,
+          "tier": 2,
           "image": "https://i.imgur.com/GwcwHSU.png",
           "sprite": "https://i.imgur.com/OhWJBuO.png",
           "abilities": [
@@ -520,7 +520,7 @@
         {
           "id": 11,
           "name": "Marc Kittycat",
-          "tier": 1,
+          "tier": 2,
           "image": "https://i.imgur.com/GwcwHSU.png",
           "sprite": "https://i.imgur.com/jyVzHzy.png",
           "abilities": [
@@ -568,7 +568,7 @@
         },
         {
           "id": 25,
-          "name": "Adam 2.0 aka better Adam",
+          "name": "Adam 2.0, better Adam",
           "tier": 1,
           "image": "https://i.imgur.com/GwcwHSU.png",
           "sprite": "https://i.imgur.com/jyVzHzy.png",
@@ -604,7 +604,7 @@
         {
           "id": 6,
           "name": "Francesco Weeee",
-          "tier": 1,
+          "tier": 2,
           "image": "https://i.imgur.com/GwcwHSU.png",
           "sprite": "https://i.imgur.com/jyVzHzy.png",
           "abilities": [
