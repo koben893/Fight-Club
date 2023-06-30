@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import FighterDisplay from './FighterDisplay';
+import PlayerOneFighterDisplay from './PlayerOneFighterDisplay';
+import PlayerTwoFighterDisplay from './PlayerTwoFighterDisplay';
 import TeamCard from './TeamCard';
+import CpuFighterDisplay from './CpuFighterDisplay';
 
 function BattleArenaPage({ activeUser, opponentTeam }) {
   const [team, setTeam] = useState([]);
@@ -9,6 +11,9 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
   const [oFighter, setOFighter] = useState({});
   const [uHealth, setUHealth] = useState(10);
   const [opHealth, setOpHealth] = useState(10);
+  const [turn, setTurn] = useState(true);
+  const [cpuAtk, setCpuAtk] = useState('default');
+  const [readAttack, setReadAttack] = useState("")
 
   useEffect(() => {
     if (activeUser.fighterList) {
@@ -43,11 +48,31 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
     }
   }, [uHealth, opHealth])
 
-  const handleFight = (pNo, tier) => {
-    if (pNo === 1) setOpHealth(c => c - tier)
 
-    if (pNo === 2) setUHealth(c => c - tier)
+  const handleFight = (pNo, tier, atk) => {
+    setReadAttack(`${uFighter.name} use ${atk} and deals ${tier} damage`)
+    setTimeout(()=>{
+      if (pNo === 1) setOpHealth(c => c - tier)
+      if (pNo === 2) setUHealth(c => c - tier)
+      setTurn(!turn);
+    }, 3000)
+
   }
+
+  useEffect(()=>{
+    const cpuAtkSet = ['firstattck', 'secondattack', 'thirdattack']
+    const dmg = oFighter.tier;
+    if(!turn){
+      const temp = cpuAtkSet[Math.floor(Math.random() *3)]
+      setCpuAtk(temp)
+      
+      setTimeout(()=>setReadAttack(`${oFighter.name} uses ${oFighter.abilities[0][temp]} and deals ${dmg} damage`), 2000)
+      setTimeout(()=>{
+        setUHealth(c => c - dmg)
+        setTurn(!turn);
+      }, 5000)
+    }
+  },[turn, oFighter])
 
   const isTeamDisplayed = (team.length === 0) ? <div></div> : team.map(coder => <TeamCard key={coder.id} id={coder.id} name={coder.name} sprite={coder.sprite} />)
   const isOTeamDisplayed = (oTeam.length === 0) ? <div></div> : oTeam.map(coder => <TeamCard key={coder.id} id={coder.id} name={coder.name} sprite={coder.sprite} />)
@@ -55,7 +80,7 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
   const isArenaDisplayed = !uFighter.name || !oFighter.name ? <h4>Waiting For User & Opponent</h4> :
     <section>
       <h3>{uHealth}</h3>
-      <FighterDisplay fighter={uFighter} handleFight={handleFight} pNo={1} />
+      <PlayerOneFighterDisplay fighter={uFighter} handleFight={handleFight} pNo={1} turn={turn}/>
       <div>
         {isTeamDisplayed}
       </div>
@@ -63,7 +88,8 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
       <span>Vs</span>
 
       <h3>{opHealth}</h3>
-      <FighterDisplay fighter={oFighter} handleFight={handleFight} pNo={2} />
+      {/* <PlayerOneFighterDisplay fighter={oFighter} handleFight={handleFight} pNo={2} turn={!turn}/> */}
+      <CpuFighterDisplay fighter={oFighter} cpuAtk={cpuAtk}/>
       <div>
         {isOTeamDisplayed}
       </div>
@@ -71,6 +97,7 @@ function BattleArenaPage({ activeUser, opponentTeam }) {
 
   return (
     <div>
+      <h4>{readAttack}</h4>
       {isArenaDisplayed}
     </div>
   )

@@ -29,7 +29,6 @@ function Home({ cohort, activeUser, handleOpponentTeam, opponentTeam}) {
         <div>
             {displayACard}
             <span>VS</span>
-            <h2>The Walking Devs</h2>
             <OpponentGen enemyTeam={opponentTeam} handleClick={handleClick} />
 
         </div>
