@@ -8,7 +8,8 @@ In the project directory, you can run:
 
 ### 'json-server --watch db.json'
 
-Runs the server so you can access all of the data necessary for the app
+Runs the server so you can access all of the data necessary for the app.
+Thiss will run on port [http://localhost:3000](http://localhost:3000)
 
 ### `npm start`
 
