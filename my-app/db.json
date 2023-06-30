@@ -254,7 +254,7 @@
     },
     {
       "id": 19,
-      "name": "Suan Soon(Ron)",
+      "name": "Suan Son(Ron)",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
       "sprite": "https://i.imgur.com/jyVzHzy.png",
@@ -268,7 +268,7 @@
     },
     {
       "id": 20,
-      "name": "Syed Hamalot must be pair",
+      "name": "Syed Hamalot",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
       "sprite": "https://i.imgur.com/jyVzHzy.png",
@@ -282,7 +282,7 @@
     },
     {
       "id": 21,
-      "name": "Syeda Hamalittle must be a pair",
+      "name": "Syeda Hamalittle",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
       "sprite": "https://i.imgur.com/OhWJBuO.png",
@@ -324,7 +324,7 @@
     },
     {
       "id": 24,
-      "name": "Andrew aka New Andrew, when dead becomes old andrew",
+      "name": "New Andrew, when dead becomes old andrew",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
       "sprite": "https://i.imgur.com/jyVzHzy.png",
@@ -352,7 +352,7 @@
     },
     {
       "id": 26,
-      "name": "Ammar the captain, catchphrase when wins: I am the captain now",
+      "name": "Ammar the Captain",
       "tier": 1,
       "image": "https://i.imgur.com/GwcwHSU.png",
       "sprite": "https://i.imgur.com/jyVzHzy.png",
@@ -422,7 +422,7 @@
     },
     {
       "id": 31,
-      "name": "Yu me? No yu",
+      "name": "Yu me? No Yu",
       "tier": 2,
       "image": "https://i.imgur.com/GwcwHSU.png",
       "sprite": "https://i.imgur.com/jyVzHzy.png",
@@ -435,10 +435,6 @@
       ]
     }
   ],
-
-
-  
-
   "Users": [
     {
       "name": "Tsizzle",
@@ -635,6 +631,55 @@
         }
       ],
       "id": 4
+    },
+    {
+      "name": "NewAndrew",
+      "teamName": "OB",
+      "fighterList": [
+        {
+          "id": 4,
+          "name": "Amelia Earheart",
+          "tier": 1,
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/OhWJBuO.png",
+          "abilities": [
+            {
+              "firstattack": "destructuring props",
+              "secondattack": "useEffect Hook",
+              "thirdattack": "fetch: DELETE"
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "name": "Tj Lister",
+          "tier": 1,
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/jyVzHzy.png",
+          "abilities": [
+            {
+              "firstattack": "Redirect Component",
+              "secondattack": "fetch: DELETE",
+              "thirdattack": "arrow function"
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "name": "Syed Hamalot must be pair",
+          "tier": 1,
+          "image": "https://i.imgur.com/GwcwHSU.png",
+          "sprite": "https://i.imgur.com/jyVzHzy.png",
+          "abilities": [
+            {
+              "firstattack": "destructuring props",
+              "secondattack": "Redirect Component",
+              "thirdattack": "arrow function"
+            }
+          ]
+        }
+      ],
+      "id": 5
     }
   ]
 }

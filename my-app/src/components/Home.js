@@ -23,7 +23,7 @@ function Home({ cohort, activeUser, handleOpponentTeam, opponentTeam}) {
         handleOpponentTeam(enemyTeam);
     };
 
-    const displayACard = activeUser.name ? <TeamPreviewCard player={activeUser} /> : <p>No Player Selected</p>
+    const displayACard = activeUser.name ? <TeamPreviewCard player={activeUser} /> : <h2>No Player Selected</h2>
 
     return (
         <div>
